@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Challenges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        #points-display {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .category-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .category-bar button:hover {
+            background-color: #45a049;
+        }
+        .challenge-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .challenge-card h2 {
+            margin-top: 0;
+        }
+        .challenge-card img {
+            max-width: 50px;
+            height: 50px;
+        }
+        .challenge-card a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 45%;
+            right: -5%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            z-index: 1000;
+        }
+        #popup h2 {
+            color: #4CAF50;
+        }
+        #popup button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sustainability Challenges</h1>
+        <div id="points-display">Points: 0</div>
+    </header>
+    <div class="container">
+        <div class="category-bar">
+            <button onclick="showChallenges('energy')">Energy Conservation</button>
+            <button onclick="showChallenges('waste')">Waste Reduction</button>
+            <button onclick="showChallenges('transport')">Sustainable Transportation</button>
+        </div>
+        <div id="challenges">
+            <!-- Energy Conservation Challenges -->
+            <div class="challenge-card energy">
+                <h2>30-Day Energy Challenge</h2>
+                <img src="cup.jpeg" alt="Energy Challenge">
+                <p>Join us in reducing your energy consumption for 30 days! Learn energy-saving tips and track your progress.</p>
+                <a href="#" class="btn" onclick="joinChallenge('energy')">Join Now</a>
+            </div>
+
+            <!-- Waste Reduction Challenges -->
+            <div class="challenge-card waste">
+                <h2>Zero Waste Week</h2>
+                <img src="cup.jpeg" alt="Zero Waste">
+                <p>Take the challenge to reduce your waste to zero for a week. Learn about composting, recycling, and sustainable living.</p>
+                <a href="#" class="btn" onclick="joinChallenge('waste')">Join Now</a>
+            </div>
+
+            <!-- Sustainable Transportation Challenges -->
+            <div class="challenge-card transport">
+                <h2>Bike to Work</h2>
+                <img src="cup.jpeg" alt="Bike to Work">
+                <p>Challenge yourself to bike to work for a month instead of driving.</p>
+                <a href="#" class="btn" onclick="joinChallenge('transport')">Join Now</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sustainability Website. All rights reserved.</p>
+    </footer>
+
+    <div id="popup">
+        <h2>Congratulations!</h2>
+        <p>You have earned 2 points.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <script>
+        // Display existing points
+        let userPoints = 0;
+        document.getElementById('points-display').textContent = `Points: ${userPoints}`;
+
+        function showChallenges(category) {
+            // Hide all challenges
+            var challenges = document.querySelectorAll('.challenge-card');
+            challenges.forEach(function(challenge) {
+                challenge.style.display = 'none';
+            });
+
+            // Show challenges of the selected category
+            var selectedChallenges = document.querySelectorAll('.' + category);
+            selectedChallenges.forEach(function(challenge) {
+                challenge.style.display = 'block';
+            });
+        }
+
+        function joinChallenge(category) {
+            // Simulate adding 2 points to the user's total
+            userPoints += 2;
+            document.getElementById('points-display').textContent = `Points: ${userPoints}`;
+
+            // Show popup
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        // Automatically display energy challenges on page load
+        showChallenges('energy');
+    </script>
+</body>
+</html>

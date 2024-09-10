@@ -1,0 +1,501 @@
+product_id,product_name,category,description,rating,eco_friendly,price,brand
+1,Sustainable Fashion,Toys,Eco-friendly product with natural ingredients,3.8,Yes,49.25,BioStyle
+2,Reusable Coffee Cup,Household,Sustainable and organic,4.4,Yes,45.6,SunPower
+3,Eco-Friendly Laundry Detergent,Household,Ethically sourced and produced,3.7,Yes,25.64,GreenClean
+4,Eco Shampoo,Personal Care,Non-toxic and safe,4.2,Yes,41.79,GreenLeaf
+5,Reusable Bag,Sports,Non-toxic and safe,4.0,Yes,39.61,FreshEarth
+6,Reusable Bag,Outdoor,Low impact on the environment,4.0,Yes,35.51,EcoCarry
+7,Compostable Cutlery,Toys,Sustainable and organic,4.2,Yes,19.39,GreenLeaf
+8,Eco-Friendly Notebook,Clothing,Energy-efficient and green,4.6,Yes,13.84,EcoCarry
+9,Solar-Powered Gadgets,Beauty,Eco-friendly product with natural ingredients,3.6,Yes,35.22,PureLife
+10,Eco-Friendly Laundry Detergent,Food,Energy-efficient and green,4.8,Yes,42.93,EcoFlex
+11,Eco-Friendly Tote Bag,Health,Made with renewable resources,4.6,Yes,5.73,SunPower
+12,Solar Charger,Beauty,Made with renewable resources,3.8,Yes,33.93,BioStyle
+13,Organic Bedding,Electronics,Made with renewable resources,4.9,Yes,24.93,EcoCarry
+14,Biodegradable Phone Case,Home Improvement,Low impact on the environment,4.3,Yes,45.41,PlanetCare
+15,Eco-Friendly Packaging,Outdoor,Reusable and eco-conscious,5.0,Yes,19.47,GreenClean
+16,Eco-Friendly Packaging,Office Supplies,Low impact on the environment,3.8,Yes,26.34,EarthWise
+17,Sustainable Fashion,Household,Eco-friendly product with natural ingredients,4.3,Yes,28.16,PlanetCare
+18,Organic Soap,Office Supplies,Reusable and eco-conscious,3.9,Yes,11.32,PlanetCare
+19,Biodegradable Phone Case,Clothing,Made with renewable resources,4.0,Yes,37.08,PureLife
+20,Compostable Cutlery,Toys,Made with renewable resources,4.4,Yes,42.37,EarthWise
+21,Organic Bedding,Personal Care,Reusable and eco-conscious,4.9,Yes,7.61,PlanetCare
+22,Energy-Efficient Light Bulbs,Outdoor,Low impact on the environment,4.7,Yes,18.11,FreshEarth
+23,Eco-Friendly Packaging,Pet Supplies,Sustainable and organic,4.6,Yes,6.71,PlanetCare
+24,Bamboo Utensil Set,Beauty,Made from recycled materials,4.3,Yes,48.04,EarthWise
+25,Organic Cotton Towel,Home Improvement,Made with renewable resources,4.9,Yes,35.02,EcoCarry
+26,Organic Skincare,Food,Eco-friendly product with natural ingredients,4.2,Yes,48.39,SunPower
+27,Reusable Straw,Food,Ethically sourced and produced,4.8,Yes,28.92,SunPower
+28,Eco-Friendly Notebook,Household,Energy-efficient and green,4.8,Yes,41.09,Nature’s Best
+29,Biodegradable Trash Bags,Sports,Ethically sourced and produced,3.8,Yes,21.85,EcoEssentials
+30,Solar-Powered Gadgets,Pet Supplies,Ethically sourced and produced,4.7,Yes,20.92,EcoEssentials
+31,Organic Tea,Jewelry,Made from recycled materials,3.5,Yes,22.02,EcoCarry
+32,Solar-Powered Gadgets,Outdoor,Certified organic and biodegradable,4.0,Yes,34.6,GreenLeaf
+33,Organic Cotton Towel,Health,Eco-friendly product with natural ingredients,3.8,Yes,21.18,ReNew
+34,Reusable Coffee Cup,Clothing,Sustainable and organic,4.3,Yes,45.52,SunPower
+35,Reusable Coffee Cup,Sports,Ethically sourced and produced,4.6,Yes,49.25,EarthWise
+36,Eco Shampoo,Beauty,Energy-efficient and green,3.6,Yes,6.37,EcoFlex
+37,Eco-Friendly Tote Bag,Food,Sustainable and organic,4.3,Yes,13.71,ReNew
+38,Reusable Bag,Books,Ethically sourced and produced,4.9,Yes,10.05,EcoBrand
+39,Eco-Friendly Packaging,Office Supplies,Eco-friendly product with natural ingredients,3.8,Yes,6.91,FreshEarth
+40,Bamboo Utensil Set,Beauty,Low impact on the environment,4.5,Yes,15.25,EcoFlex
+41,Solar-Powered Gadgets,Health,Certified organic and biodegradable,4.4,Yes,25.11,PlanetCare
+42,Solar-Powered Gadgets,Clothing,Certified organic and biodegradable,3.5,Yes,42.66,EcoBrand
+43,Solar-Powered Gadgets,Sports,Low impact on the environment,4.2,Yes,14.98,EcoBrand
+44,Energy-Efficient Light Bulbs,Beauty,Made from recycled materials,4.6,Yes,27.23,EcoBrand
+45,Compostable Cutlery,Personal Care,Energy-efficient and green,3.6,Yes,46.83,SunPower
+46,Eco Shampoo,Food,Energy-efficient and green,4.8,Yes,35.02,EarthWise
+47,Organic Soap,Books,Made from recycled materials,4.3,Yes,40.91,EcoFlex
+48,Eco-Friendly Notebook,Books,Low impact on the environment,3.5,Yes,29.79,BioStyle
+49,Eco Shampoo,Jewelry,Ethically sourced and produced,3.8,Yes,49.12,BioStyle
+50,Eco-Friendly Water Bottle,Home Improvement,Non-toxic and safe,4.9,Yes,31.49,EcoEssentials
+51,Biodegradable Trash Bags,Beauty,Certified organic and biodegradable,4.4,Yes,7.05,PlanetCare
+52,Organic Bedding,Sports,Sustainable and organic,3.7,Yes,13.91,GreenClean
+53,Reusable Bag,Food,Made from recycled materials,3.9,Yes,23.21,FreshEarth
+54,Natural Cleaning Products,Food,Certified organic and biodegradable,4.2,Yes,32.06,EcoBrand
+55,Eco-Friendly Tote Bag,Office Supplies,Sustainable and organic,3.5,Yes,39.74,GreenLeaf
+56,Organic Bedding,Outdoor,Ethically sourced and produced,4.1,Yes,23.59,PureLife
+57,Bamboo Toothbrush,Books,Certified organic and biodegradable,4.2,Yes,36.95,EarthWise
+58,Eco Shampoo,Jewelry,Eco-friendly product with natural ingredients,3.9,Yes,40.54,EcoEssentials
+59,Eco Shampoo,Personal Care,Made from recycled materials,4.4,Yes,19.28,EcoEssentials
+60,Solar Charger,Outdoor,Made with renewable resources,4.6,Yes,49.07,FreshEarth
+61,Eco-Friendly Laundry Detergent,Beauty,Sustainable and organic,3.9,Yes,34.23,ReNew
+62,Organic Cotton Towel,Health,Made with renewable resources,4.4,Yes,44.64,EcoBrand
+63,Biodegradable Phone Case,Home Improvement,Certified organic and biodegradable,4.5,Yes,30.02,GreenLeaf
+64,Reusable Straw,Toys,Eco-friendly product with natural ingredients,4.9,Yes,38.37,ReNew
+65,Biodegradable Trash Bags,Beauty,Made with renewable resources,4.7,Yes,39.67,Nature’s Best
+66,Bamboo Utensil Set,Electronics,Ethically sourced and produced,4.8,Yes,45.87,EcoFlex
+67,Reusable Coffee Cup,Books,Non-toxic and safe,4.2,Yes,11.77,GreenLeaf
+68,Solar Charger,Sports,Non-toxic and safe,3.8,Yes,30.12,FreshEarth
+69,Eco-Friendly Notebook,Personal Care,Low impact on the environment,5.0,Yes,24.28,EcoEssentials
+70,Eco-Friendly Water Bottle,Beauty,Certified organic and biodegradable,3.7,Yes,46.54,EcoBrand
+71,Eco-Friendly Packaging,Toys,Made with renewable resources,4.2,Yes,9.73,EarthWise
+72,Organic Soap,Jewelry,Ethically sourced and produced,3.6,Yes,49.22,EarthWise
+73,Organic Soap,Personal Care,Non-toxic and safe,4.9,Yes,44.4,EcoEssentials
+74,Compostable Cutlery,Beauty,Sustainable and organic,4.9,Yes,8.32,SunPower
+75,Eco-Friendly Notebook,Health,Eco-friendly product with natural ingredients,4.6,Yes,27.09,ReNew
+76,Reusable Bag,Household,Eco-friendly product with natural ingredients,4.0,Yes,37.29,SustainIt
+77,Biodegradable Phone Case,Office Supplies,Ethically sourced and produced,3.9,Yes,38.22,BioStyle
+78,Organic Bedding,Books,Low impact on the environment,3.9,Yes,45.79,GreenClean
+79,Natural Cleaning Products,Home Improvement,Made from recycled materials,3.7,Yes,40.99,ReNew
+80,Energy-Efficient Light Bulbs,Electronics,Low impact on the environment,4.3,Yes,18.99,EarthWise
+81,Eco-Friendly Tote Bag,Pet Supplies,Sustainable and organic,3.7,Yes,27.43,EarthWise
+82,Eco Shampoo,Home Improvement,Made with renewable resources,4.0,Yes,36.58,EarthWise
+83,Energy-Efficient Light Bulbs,Clothing,Made with renewable resources,4.4,Yes,11.23,BioStyle
+84,Reusable Bag,Home Improvement,Eco-friendly product with natural ingredients,4.6,Yes,13.73,SunPower
+85,Eco-Friendly Laundry Detergent,Pet Supplies,Made with renewable resources,3.5,Yes,26.65,PureLife
+86,Sustainable Fashion,Books,Low impact on the environment,4.1,Yes,18.42,PlanetCare
+87,Eco-Friendly Water Bottle,Household,Eco-friendly product with natural ingredients,4.5,Yes,43.82,ReNew
+88,Biodegradable Trash Bags,Beauty,Energy-efficient and green,4.8,Yes,31.38,ReNew
+89,Natural Cleaning Products,Electronics,Reusable and eco-conscious,4.2,Yes,20.69,EcoBrand
+90,Solar Charger,Clothing,Made with renewable resources,5.0,Yes,43.2,GreenClean
+91,Biodegradable Phone Case,Pet Supplies,Ethically sourced and produced,3.9,Yes,41.22,BioStyle
+92,Solar Charger,Home Improvement,Reusable and eco-conscious,3.5,Yes,49.93,SunPower
+93,Reusable Coffee Cup,Sports,Certified organic and biodegradable,4.2,Yes,43.13,ReNew
+94,Biodegradable Trash Bags,Clothing,Ethically sourced and produced,3.9,Yes,23.65,GreenClean
+95,Reusable Bag,Home Improvement,Low impact on the environment,4.7,Yes,10.74,GreenLeaf
+96,Sustainable Fashion,Jewelry,Low impact on the environment,3.8,Yes,42.83,EcoCarry
+97,Solar Charger,Clothing,Energy-efficient and green,4.0,Yes,7.69,BioStyle
+98,Biodegradable Trash Bags,Household,Sustainable and organic,4.7,Yes,20.76,FreshEarth
+99,Reusable Straw,Electronics,Ethically sourced and produced,4.6,Yes,46.39,Nature’s Best
+100,Energy-Efficient Light Bulbs,Pet Supplies,Energy-efficient and green,4.3,Yes,48.23,SunPower
+101,Reusable Coffee Cup,Jewelry,Ethically sourced and produced,4.6,Yes,33.83,EcoEssentials
+102,Biodegradable Trash Bags,Pet Supplies,Ethically sourced and produced,4.1,Yes,35.99,SustainIt
+103,Reusable Bag,Sports,Low impact on the environment,3.5,Yes,6.91,EcoBrand
+104,Organic Bedding,Electronics,Made from recycled materials,3.5,Yes,28.15,FreshEarth
+105,Reusable Coffee Cup,Beauty,Certified organic and biodegradable,4.3,Yes,29.61,FreshEarth
+106,Organic Skincare,Home Improvement,Sustainable and organic,3.6,Yes,20.3,EarthWise
+107,Eco-Friendly Laundry Detergent,Toys,Energy-efficient and green,3.6,Yes,8.09,EcoBrand
+108,Eco-Friendly Laundry Detergent,Sports,Reusable and eco-conscious,4.9,Yes,15.3,GreenClean
+109,Organic Tea,Toys,Non-toxic and safe,4.8,Yes,21.11,Nature’s Best
+110,Bamboo Utensil Set,Health,Made with renewable resources,3.7,Yes,24.58,EcoFlex
+111,Organic Cotton Towel,Health,Energy-efficient and green,3.5,Yes,31.59,ReNew
+112,Eco-Friendly Notebook,Office Supplies,Sustainable and organic,4.9,Yes,37.51,ReNew
+113,Reusable Bag,Electronics,Certified organic and biodegradable,3.9,Yes,19.29,PureLife
+114,Eco Shampoo,Toys,Reusable and eco-conscious,3.8,Yes,19.8,PlanetCare
+115,Organic Cotton Towel,Beauty,Made from recycled materials,4.5,Yes,5.89,BioStyle
+116,Eco Shampoo,Health,Made from recycled materials,3.7,Yes,6.84,EcoEssentials
+117,Bamboo Utensil Set,Jewelry,Energy-efficient and green,3.9,Yes,16.6,BioStyle
+118,Eco-Friendly Tote Bag,Personal Care,Sustainable and organic,5.0,Yes,38.31,GreenClean
+119,Solar Charger,Pet Supplies,Low impact on the environment,4.5,Yes,33.27,EcoCarry
+120,Bamboo Toothbrush,Office Supplies,Reusable and eco-conscious,4.3,Yes,39.64,EarthWise
+121,Organic Tea,Toys,Ethically sourced and produced,4.1,Yes,39.6,EcoCarry
+122,Reusable Bag,Outdoor,Energy-efficient and green,4.7,Yes,43.55,EcoFlex
+123,Bamboo Toothbrush,Personal Care,Non-toxic and safe,3.7,Yes,37.41,EcoCarry
+124,Eco-Friendly Water Bottle,Toys,Sustainable and organic,5.0,Yes,49.06,SustainIt
+125,Organic Skincare,Books,Ethically sourced and produced,4.8,Yes,45.45,PlanetCare
+126,Organic Tea,Pet Supplies,Non-toxic and safe,4.4,Yes,31.4,BioStyle
+127,Compostable Cutlery,Sports,Energy-efficient and green,3.6,Yes,31.47,EcoFlex
+128,Eco-Friendly Laundry Detergent,Jewelry,Ethically sourced and produced,4.6,Yes,6.54,EarthWise
+129,Eco-Friendly Notebook,Health,Made with renewable resources,4.9,Yes,49.93,EcoEssentials
+130,Eco Shampoo,Pet Supplies,Energy-efficient and green,4.3,Yes,10.92,BioStyle
+131,Eco-Friendly Water Bottle,Food,Energy-efficient and green,4.0,Yes,38.32,PureLife
+132,Eco-Friendly Tote Bag,Jewelry,Reusable and eco-conscious,3.7,Yes,41.95,EcoFlex
+133,Natural Cleaning Products,Home Improvement,Reusable and eco-conscious,4.6,Yes,21.79,SustainIt
+134,Organic Bedding,Health,Sustainable and organic,4.8,Yes,13.86,FreshEarth
+135,Bamboo Toothbrush,Food,Made from recycled materials,3.7,Yes,9.44,ReNew
+136,Bamboo Toothbrush,Books,Eco-friendly product with natural ingredients,4.6,Yes,38.69,GreenLeaf
+137,Reusable Bag,Electronics,Sustainable and organic,3.5,Yes,25.37,GreenLeaf
+138,Reusable Bag,Sports,Non-toxic and safe,5.0,Yes,37.12,PureLife
+139,Eco-Friendly Tote Bag,Office Supplies,Sustainable and organic,4.4,Yes,46.19,EcoEssentials
+140,Energy-Efficient Light Bulbs,Household,Low impact on the environment,4.3,Yes,11.6,EcoFlex
+141,Reusable Bag,Home Improvement,Non-toxic and safe,3.9,Yes,46.36,EcoBrand
+142,Biodegradable Trash Bags,Electronics,Certified organic and biodegradable,4.9,Yes,23.52,EcoEssentials
+143,Bamboo Utensil Set,Electronics,Low impact on the environment,3.9,Yes,18.74,SunPower
+144,Eco-Friendly Tote Bag,Office Supplies,Made from recycled materials,4.7,Yes,47.44,Nature’s Best
+145,Energy-Efficient Light Bulbs,Jewelry,Eco-friendly product with natural ingredients,5.0,Yes,49.58,EcoBrand
+146,Eco-Friendly Notebook,Food,Made with renewable resources,4.7,Yes,13.95,EarthWise
+147,Organic Soap,Books,Made from recycled materials,4.3,Yes,34.56,EcoCarry
+148,Solar Charger,Health,Reusable and eco-conscious,3.6,Yes,9.79,EcoCarry
+149,Eco-Friendly Water Bottle,Clothing,Ethically sourced and produced,4.2,Yes,34.29,SunPower
+150,Sustainable Footwear,Pet Supplies,Non-toxic and safe,4.2,Yes,42.23,FreshEarth
+151,Natural Cleaning Products,Electronics,Made with renewable resources,3.8,Yes,35.8,PureLife
+152,Reusable Straw,Office Supplies,Made from recycled materials,4.1,Yes,23.78,ReNew
+153,Natural Cleaning Products,Jewelry,Energy-efficient and green,4.0,Yes,22.24,FreshEarth
+154,Bamboo Toothbrush,Pet Supplies,Made with renewable resources,3.7,Yes,22.69,EcoBrand
+155,Solar-Powered Gadgets,Electronics,Low impact on the environment,4.2,Yes,31.54,SunPower
+156,Organic Tea,Household,Made with renewable resources,3.9,Yes,44.67,Nature’s Best
+157,Eco Shampoo,Office Supplies,Made from recycled materials,4.3,Yes,46.81,SustainIt
+158,Sustainable Footwear,Personal Care,Low impact on the environment,3.6,Yes,7.41,GreenClean
+159,Eco Shampoo,Home Improvement,Non-toxic and safe,4.9,Yes,13.17,ReNew
+160,Biodegradable Phone Case,Personal Care,Made from recycled materials,4.7,Yes,10.05,PureLife
+161,Solar-Powered Gadgets,Electronics,Made with renewable resources,4.3,Yes,13.7,GreenClean
+162,Energy-Efficient Light Bulbs,Outdoor,Sustainable and organic,4.8,Yes,20.6,PureLife
+163,Eco-Friendly Water Bottle,Beauty,Made from recycled materials,4.9,Yes,27.79,EcoBrand
+164,Solar-Powered Gadgets,Pet Supplies,Made with renewable resources,3.7,Yes,33.33,PureLife
+165,Eco-Friendly Packaging,Toys,Certified organic and biodegradable,4.4,Yes,37.95,Nature’s Best
+166,Reusable Straw,Personal Care,Certified organic and biodegradable,5.0,Yes,45.06,SunPower
+167,Organic Skincare,Toys,Energy-efficient and green,5.0,Yes,49.51,PlanetCare
+168,Eco-Friendly Packaging,Books,Ethically sourced and produced,4.4,Yes,34.83,SunPower
+169,Bamboo Toothbrush,Outdoor,Made from recycled materials,3.7,Yes,43.04,EarthWise
+170,Reusable Bag,Outdoor,Low impact on the environment,4.4,Yes,40.01,BioStyle
+171,Bamboo Toothbrush,Household,Non-toxic and safe,3.5,Yes,18.84,EcoEssentials
+172,Natural Cleaning Products,Personal Care,Low impact on the environment,3.8,Yes,44.41,EcoCarry
+173,Organic Skincare,Food,Reusable and eco-conscious,4.9,Yes,6.92,Nature’s Best
+174,Organic Tea,Outdoor,Non-toxic and safe,4.0,Yes,5.02,FreshEarth
+175,Reusable Straw,Electronics,Made from recycled materials,4.5,Yes,17.32,EcoBrand
+176,Reusable Straw,Beauty,Ethically sourced and produced,3.9,Yes,25.79,GreenClean
+177,Solar-Powered Gadgets,Office Supplies,Made with renewable resources,4.9,Yes,33.73,PlanetCare
+178,Reusable Straw,Jewelry,Non-toxic and safe,4.6,Yes,9.58,EcoFlex
+179,Bamboo Toothbrush,Food,Eco-friendly product with natural ingredients,4.0,Yes,35.29,PlanetCare
+180,Eco-Friendly Packaging,Books,Made with renewable resources,4.7,Yes,41.08,PlanetCare
+181,Biodegradable Trash Bags,Beauty,Sustainable and organic,3.7,Yes,13.34,EcoBrand
+182,Reusable Bag,Outdoor,Reusable and eco-conscious,4.1,Yes,23.68,GreenLeaf
+183,Sustainable Fashion,Health,Ethically sourced and produced,3.8,Yes,28.4,GreenLeaf
+184,Energy-Efficient Light Bulbs,Clothing,Eco-friendly product with natural ingredients,4.5,Yes,25.33,EcoFlex
+185,Eco Shampoo,Health,Ethically sourced and produced,3.7,Yes,40.99,PureLife
+186,Solar Charger,Office Supplies,Certified organic and biodegradable,4.1,Yes,48.22,SunPower
+187,Reusable Bag,Beauty,Non-toxic and safe,3.9,Yes,40.95,EcoEssentials
+188,Organic Skincare,Health,Certified organic and biodegradable,4.3,Yes,8.51,SustainIt
+189,Natural Cleaning Products,Electronics,Reusable and eco-conscious,4.0,Yes,41.22,EarthWise
+190,Sustainable Footwear,Office Supplies,Ethically sourced and produced,4.6,Yes,8.0,EcoBrand
+191,Organic Skincare,Office Supplies,Made from recycled materials,3.5,Yes,15.62,EcoCarry
+192,Organic Skincare,Health,Sustainable and organic,4.5,Yes,11.89,FreshEarth
+193,Natural Cleaning Products,Food,Made with renewable resources,3.8,Yes,13.89,PlanetCare
+194,Eco-Friendly Packaging,Books,Made from recycled materials,3.9,Yes,28.77,SunPower
+195,Organic Tea,Food,Certified organic and biodegradable,4.7,Yes,35.23,FreshEarth
+196,Eco-Friendly Packaging,Pet Supplies,Ethically sourced and produced,4.9,Yes,26.16,Nature’s Best
+197,Eco-Friendly Laundry Detergent,Home Improvement,Ethically sourced and produced,4.0,Yes,48.19,PureLife
+198,Energy-Efficient Light Bulbs,Clothing,Sustainable and organic,4.7,Yes,15.81,EcoFlex
+199,Organic Tea,Health,Non-toxic and safe,3.7,Yes,39.34,EcoCarry
+200,Sustainable Footwear,Pet Supplies,Made with renewable resources,4.5,Yes,44.16,EcoCarry
+201,Eco-Friendly Laundry Detergent,Food,Reusable and eco-conscious,4.6,Yes,30.29,GreenClean
+202,Solar-Powered Gadgets,Books,Sustainable and organic,3.7,Yes,25.53,SunPower
+203,Organic Soap,Household,Eco-friendly product with natural ingredients,4.1,Yes,31.83,SunPower
+204,Reusable Straw,Beauty,Sustainable and organic,4.8,Yes,24.3,FreshEarth
+205,Eco Shampoo,Pet Supplies,Eco-friendly product with natural ingredients,3.7,Yes,29.98,PlanetCare
+206,Solar Charger,Beauty,Sustainable and organic,3.5,Yes,23.76,SunPower
+207,Biodegradable Phone Case,Toys,Sustainable and organic,4.4,Yes,23.02,EcoEssentials
+208,Eco-Friendly Laundry Detergent,Outdoor,Low impact on the environment,4.2,Yes,36.29,BioStyle
+209,Organic Skincare,Jewelry,Certified organic and biodegradable,4.7,Yes,9.18,SustainIt
+210,Compostable Cutlery,Home Improvement,Certified organic and biodegradable,4.9,Yes,12.49,EcoCarry
+211,Eco-Friendly Packaging,Food,Made from recycled materials,3.9,Yes,43.3,Nature’s Best
+212,Eco-Friendly Packaging,Pet Supplies,Reusable and eco-conscious,4.1,Yes,39.7,BioStyle
+213,Reusable Coffee Cup,Food,Eco-friendly product with natural ingredients,4.2,Yes,17.67,EcoCarry
+214,Eco-Friendly Notebook,Health,Made with renewable resources,4.4,Yes,21.98,EcoCarry
+215,Eco-Friendly Tote Bag,Personal Care,Energy-efficient and green,5.0,Yes,46.67,GreenLeaf
+216,Reusable Straw,Home Improvement,Low impact on the environment,4.5,Yes,41.81,EcoBrand
+217,Sustainable Footwear,Jewelry,Eco-friendly product with natural ingredients,4.1,Yes,32.65,PlanetCare
+218,Reusable Coffee Cup,Sports,Ethically sourced and produced,3.9,Yes,14.97,PlanetCare
+219,Natural Cleaning Products,Food,Made from recycled materials,4.9,Yes,6.99,EcoEssentials
+220,Biodegradable Phone Case,Household,Made from recycled materials,3.7,Yes,24.41,GreenLeaf
+221,Reusable Coffee Cup,Food,Non-toxic and safe,4.6,Yes,35.27,FreshEarth
+222,Organic Soap,Health,Energy-efficient and green,4.9,Yes,42.28,ReNew
+223,Sustainable Footwear,Office Supplies,Non-toxic and safe,4.5,Yes,43.37,SunPower
+224,Sustainable Fashion,Toys,Eco-friendly product with natural ingredients,4.1,Yes,6.47,EcoBrand
+225,Eco-Friendly Packaging,Toys,Low impact on the environment,3.8,Yes,15.99,EarthWise
+226,Eco-Friendly Packaging,Books,Ethically sourced and produced,4.1,Yes,20.26,ReNew
+227,Reusable Bag,Health,Made from recycled materials,4.6,Yes,13.49,FreshEarth
+228,Eco-Friendly Tote Bag,Jewelry,Eco-friendly product with natural ingredients,4.5,Yes,41.13,ReNew
+229,Reusable Coffee Cup,Jewelry,Eco-friendly product with natural ingredients,4.9,Yes,39.54,EarthWise
+230,Reusable Bag,Outdoor,Sustainable and organic,4.8,Yes,28.26,BioStyle
+231,Eco-Friendly Water Bottle,Sports,Reusable and eco-conscious,4.7,Yes,49.23,PlanetCare
+232,Sustainable Fashion,Pet Supplies,Eco-friendly product with natural ingredients,4.9,Yes,11.48,FreshEarth
+233,Biodegradable Phone Case,Food,Reusable and eco-conscious,3.9,Yes,45.48,EcoCarry
+234,Reusable Bag,Books,Reusable and eco-conscious,4.1,Yes,10.24,EarthWise
+235,Sustainable Footwear,Toys,Non-toxic and safe,4.1,Yes,12.34,Nature’s Best
+236,Organic Cotton Towel,Beauty,Low impact on the environment,4.3,Yes,36.33,GreenLeaf
+237,Organic Bedding,Toys,Made with renewable resources,4.5,Yes,9.93,EcoBrand
+238,Natural Cleaning Products,Electronics,Certified organic and biodegradable,3.9,Yes,30.46,EcoCarry
+239,Eco Shampoo,Home Improvement,Non-toxic and safe,3.5,Yes,23.91,GreenClean
+240,Natural Cleaning Products,Books,Certified organic and biodegradable,4.1,Yes,37.78,EcoBrand
+241,Reusable Straw,Home Improvement,Reusable and eco-conscious,4.0,Yes,45.53,GreenLeaf
+242,Biodegradable Trash Bags,Beauty,Energy-efficient and green,4.9,Yes,39.64,EcoBrand
+243,Eco-Friendly Water Bottle,Pet Supplies,Made with renewable resources,4.8,Yes,43.24,GreenLeaf
+244,Sustainable Footwear,Jewelry,Made with renewable resources,4.8,Yes,6.48,PlanetCare
+245,Natural Cleaning Products,Electronics,Ethically sourced and produced,4.5,Yes,18.96,GreenClean
+246,Organic Cotton Towel,Food,Made with renewable resources,4.0,Yes,28.19,EcoBrand
+247,Reusable Coffee Cup,Toys,Reusable and eco-conscious,4.3,Yes,23.72,GreenClean
+248,Reusable Straw,Clothing,Energy-efficient and green,4.7,Yes,15.41,Nature’s Best
+249,Bamboo Toothbrush,Household,Sustainable and organic,3.6,Yes,18.85,ReNew
+250,Solar-Powered Gadgets,Food,Sustainable and organic,4.7,Yes,47.54,EcoBrand
+251,Organic Bedding,Jewelry,Sustainable and organic,3.6,Yes,18.24,PlanetCare
+252,Eco-Friendly Laundry Detergent,Outdoor,Made with renewable resources,4.7,Yes,20.93,ReNew
+253,Solar-Powered Gadgets,Beauty,Non-toxic and safe,4.7,Yes,5.17,SustainIt
+254,Energy-Efficient Light Bulbs,Food,Eco-friendly product with natural ingredients,3.6,Yes,43.03,EcoCarry
+255,Biodegradable Trash Bags,Outdoor,Non-toxic and safe,4.4,Yes,11.97,EcoFlex
+256,Eco-Friendly Laundry Detergent,Clothing,Eco-friendly product with natural ingredients,4.3,Yes,14.19,PlanetCare
+257,Reusable Bag,Toys,Reusable and eco-conscious,3.8,Yes,16.49,FreshEarth
+258,Reusable Bag,Household,Sustainable and organic,3.7,Yes,44.81,EcoCarry
+259,Compostable Cutlery,Sports,Energy-efficient and green,4.7,Yes,14.29,Nature’s Best
+260,Eco-Friendly Notebook,Outdoor,Low impact on the environment,4.4,Yes,40.89,Nature’s Best
+261,Eco-Friendly Notebook,Household,Eco-friendly product with natural ingredients,5.0,Yes,41.36,Nature’s Best
+262,Eco-Friendly Notebook,Electronics,Low impact on the environment,5.0,Yes,46.72,SunPower
+263,Organic Bedding,Household,Low impact on the environment,5.0,Yes,10.2,FreshEarth
+264,Reusable Bag,Jewelry,Reusable and eco-conscious,3.7,Yes,14.78,GreenClean
+265,Energy-Efficient Light Bulbs,Household,Certified organic and biodegradable,4.9,Yes,38.43,BioStyle
+266,Eco-Friendly Tote Bag,Sports,Low impact on the environment,3.9,Yes,13.82,SunPower
+267,Sustainable Fashion,Food,Low impact on the environment,4.2,Yes,17.88,FreshEarth
+268,Reusable Bag,Books,Ethically sourced and produced,4.6,Yes,12.5,PlanetCare
+269,Eco-Friendly Notebook,Jewelry,Reusable and eco-conscious,3.8,Yes,12.77,GreenClean
+270,Eco-Friendly Water Bottle,Personal Care,Ethically sourced and produced,4.3,Yes,26.67,PlanetCare
+271,Organic Skincare,Clothing,Eco-friendly product with natural ingredients,3.8,Yes,9.94,EcoBrand
+272,Compostable Cutlery,Household,Made from recycled materials,3.7,Yes,19.48,EcoEssentials
+273,Compostable Cutlery,Household,Non-toxic and safe,3.7,Yes,24.2,EarthWise
+274,Eco-Friendly Laundry Detergent,Pet Supplies,Non-toxic and safe,4.0,Yes,6.1,PureLife
+275,Organic Soap,Office Supplies,Made with renewable resources,3.5,Yes,22.47,FreshEarth
+276,Sustainable Fashion,Health,Eco-friendly product with natural ingredients,4.1,Yes,9.24,BioStyle
+277,Bamboo Toothbrush,Jewelry,Energy-efficient and green,4.5,Yes,27.21,EcoFlex
+278,Bamboo Toothbrush,Health,Sustainable and organic,4.1,Yes,42.16,EcoEssentials
+279,Eco-Friendly Packaging,Personal Care,Made from recycled materials,3.6,Yes,41.83,EcoFlex
+280,Organic Soap,Electronics,Ethically sourced and produced,3.6,Yes,8.62,BioStyle
+281,Organic Cotton Towel,Beauty,Made with renewable resources,3.9,Yes,32.06,SustainIt
+282,Reusable Straw,Sports,Low impact on the environment,3.8,Yes,42.56,SunPower
+283,Solar Charger,Office Supplies,Reusable and eco-conscious,4.9,Yes,15.71,ReNew
+284,Eco Shampoo,Home Improvement,Made with renewable resources,3.7,Yes,39.29,EcoEssentials
+285,Natural Cleaning Products,Jewelry,Made from recycled materials,4.7,Yes,45.08,EcoBrand
+286,Bamboo Toothbrush,Electronics,Energy-efficient and green,4.4,Yes,41.28,EcoFlex
+287,Organic Cotton Towel,Books,Non-toxic and safe,4.4,Yes,9.83,EcoFlex
+288,Eco-Friendly Laundry Detergent,Clothing,Made with renewable resources,4.3,Yes,5.41,ReNew
+289,Organic Tea,Home Improvement,Eco-friendly product with natural ingredients,5.0,Yes,13.63,Nature’s Best
+290,Reusable Straw,Jewelry,Eco-friendly product with natural ingredients,4.0,Yes,17.17,PureLife
+291,Organic Soap,Personal Care,Sustainable and organic,4.7,Yes,32.73,PureLife
+292,Bamboo Utensil Set,Office Supplies,Certified organic and biodegradable,4.3,Yes,22.29,EcoCarry
+293,Organic Tea,Health,Made from recycled materials,4.1,Yes,36.65,EcoBrand
+294,Reusable Bag,Home Improvement,Ethically sourced and produced,4.9,Yes,20.89,EcoCarry
+295,Eco-Friendly Packaging,Electronics,Eco-friendly product with natural ingredients,4.4,Yes,11.95,PureLife
+296,Reusable Straw,Clothing,Sustainable and organic,3.7,Yes,19.07,EcoCarry
+297,Biodegradable Trash Bags,Sports,Sustainable and organic,4.1,Yes,44.79,EcoFlex
+298,Solar Charger,Beauty,Made from recycled materials,4.7,Yes,48.13,EarthWise
+299,Organic Tea,Personal Care,Made with renewable resources,4.5,Yes,14.34,PureLife
+300,Reusable Bag,Office Supplies,Non-toxic and safe,4.9,Yes,40.48,SunPower
+301,Compostable Cutlery,Food,Made from recycled materials,3.9,Yes,17.3,GreenLeaf
+302,Reusable Bag,Clothing,Made with renewable resources,4.6,Yes,44.92,FreshEarth
+303,Eco-Friendly Tote Bag,Pet Supplies,Eco-friendly product with natural ingredients,4.2,Yes,12.45,Nature’s Best
+304,Bamboo Utensil Set,Personal Care,Reusable and eco-conscious,4.4,Yes,34.97,SunPower
+305,Organic Soap,Pet Supplies,Energy-efficient and green,4.9,Yes,8.79,BioStyle
+306,Eco-Friendly Tote Bag,Electronics,Energy-efficient and green,5.0,Yes,48.83,Nature’s Best
+307,Bamboo Utensil Set,Beauty,Low impact on the environment,4.8,Yes,36.53,EcoBrand
+308,Biodegradable Trash Bags,Household,Eco-friendly product with natural ingredients,4.0,Yes,42.88,SunPower
+309,Bamboo Toothbrush,Sports,Sustainable and organic,4.8,Yes,30.5,EcoFlex
+310,Organic Cotton Towel,Toys,Made with renewable resources,4.5,Yes,26.46,EcoEssentials
+311,Organic Cotton Towel,Household,Low impact on the environment,4.1,Yes,32.98,EcoCarry
+312,Sustainable Fashion,Jewelry,Ethically sourced and produced,3.6,Yes,28.79,GreenLeaf
+313,Sustainable Fashion,Pet Supplies,Ethically sourced and produced,4.7,Yes,26.12,EcoBrand
+314,Eco-Friendly Laundry Detergent,Beauty,Made with renewable resources,4.3,Yes,39.18,EcoBrand
+315,Bamboo Toothbrush,Toys,Made from recycled materials,4.7,Yes,13.02,SustainIt
+316,Reusable Coffee Cup,Clothing,Low impact on the environment,4.6,Yes,12.7,EcoCarry
+317,Eco-Friendly Laundry Detergent,Toys,Certified organic and biodegradable,4.7,Yes,24.43,Nature’s Best
+318,Compostable Cutlery,Household,Certified organic and biodegradable,4.0,Yes,19.43,BioStyle
+319,Compostable Cutlery,Sports,Reusable and eco-conscious,4.7,Yes,8.34,ReNew
+320,Natural Cleaning Products,Clothing,Sustainable and organic,4.3,Yes,43.0,GreenLeaf
+321,Sustainable Footwear,Personal Care,Eco-friendly product with natural ingredients,4.2,Yes,39.72,EcoCarry
+322,Bamboo Utensil Set,Toys,Certified organic and biodegradable,4.5,Yes,29.48,EcoFlex
+323,Biodegradable Phone Case,Electronics,Made with renewable resources,3.5,Yes,49.07,GreenClean
+324,Compostable Cutlery,Office Supplies,Made with renewable resources,3.7,Yes,8.27,SustainIt
+325,Eco-Friendly Tote Bag,Toys,Eco-friendly product with natural ingredients,3.9,Yes,39.5,PureLife
+326,Natural Cleaning Products,Sports,Energy-efficient and green,5.0,Yes,16.99,EcoCarry
+327,Solar-Powered Gadgets,Clothing,Certified organic and biodegradable,3.7,Yes,21.59,PlanetCare
+328,Bamboo Utensil Set,Personal Care,Eco-friendly product with natural ingredients,4.0,Yes,14.87,SustainIt
+329,Eco-Friendly Notebook,Electronics,Energy-efficient and green,3.6,Yes,40.51,EarthWise
+330,Energy-Efficient Light Bulbs,Health,Ethically sourced and produced,4.0,Yes,11.49,EcoFlex
+331,Eco-Friendly Laundry Detergent,Home Improvement,Made with renewable resources,4.0,Yes,42.8,EcoCarry
+332,Eco-Friendly Notebook,Electronics,Reusable and eco-conscious,4.9,Yes,34.77,ReNew
+333,Eco-Friendly Tote Bag,Clothing,Energy-efficient and green,4.8,Yes,7.66,EarthWise
+334,Eco Shampoo,Office Supplies,Non-toxic and safe,4.1,Yes,41.49,BioStyle
+335,Eco-Friendly Notebook,Home Improvement,Made with renewable resources,3.5,Yes,33.25,PureLife
+336,Natural Cleaning Products,Home Improvement,Ethically sourced and produced,4.7,Yes,45.72,GreenClean
+337,Bamboo Utensil Set,Office Supplies,Eco-friendly product with natural ingredients,4.5,Yes,38.69,FreshEarth
+338,Eco-Friendly Notebook,Food,Energy-efficient and green,3.7,Yes,30.25,EarthWise
+339,Eco Shampoo,Clothing,Non-toxic and safe,5.0,Yes,42.64,EarthWise
+340,Sustainable Footwear,Toys,Energy-efficient and green,3.7,Yes,17.51,Nature’s Best
+341,Organic Tea,Clothing,Eco-friendly product with natural ingredients,4.8,Yes,29.61,PlanetCare
+342,Eco-Friendly Water Bottle,Home Improvement,Reusable and eco-conscious,3.9,Yes,18.21,EcoCarry
+343,Solar Charger,Toys,Ethically sourced and produced,4.2,Yes,48.57,GreenClean
+344,Eco-Friendly Packaging,Office Supplies,Ethically sourced and produced,4.7,Yes,15.18,EcoFlex
+345,Biodegradable Trash Bags,Outdoor,Made from recycled materials,4.5,Yes,5.71,PlanetCare
+346,Reusable Bag,Household,Eco-friendly product with natural ingredients,4.9,Yes,19.66,BioStyle
+347,Solar-Powered Gadgets,Food,Eco-friendly product with natural ingredients,4.4,Yes,27.61,EcoCarry
+348,Reusable Straw,Sports,Sustainable and organic,3.6,Yes,6.28,BioStyle
+349,Eco-Friendly Packaging,Personal Care,Non-toxic and safe,4.8,Yes,30.17,ReNew
+350,Energy-Efficient Light Bulbs,Toys,Non-toxic and safe,4.7,Yes,44.34,EarthWise
+351,Organic Bedding,Household,Reusable and eco-conscious,4.6,Yes,36.71,PureLife
+352,Eco Shampoo,Toys,Sustainable and organic,3.6,Yes,33.03,EcoEssentials
+353,Solar-Powered Gadgets,Beauty,Eco-friendly product with natural ingredients,4.1,Yes,48.02,FreshEarth
+354,Reusable Straw,Home Improvement,Sustainable and organic,3.8,Yes,48.12,PureLife
+355,Compostable Cutlery,Electronics,Low impact on the environment,4.7,Yes,42.09,FreshEarth
+356,Organic Bedding,Outdoor,Made from recycled materials,4.6,Yes,32.35,BioStyle
+357,Organic Skincare,Electronics,Energy-efficient and green,4.8,Yes,26.95,EcoEssentials
+358,Bamboo Utensil Set,Clothing,Made from recycled materials,4.9,Yes,5.6,FreshEarth
+359,Eco-Friendly Packaging,Jewelry,Low impact on the environment,4.7,Yes,32.28,SustainIt
+360,Biodegradable Trash Bags,Office Supplies,Energy-efficient and green,5.0,Yes,49.51,EcoEssentials
+361,Organic Bedding,Outdoor,Reusable and eco-conscious,4.4,Yes,41.81,EcoFlex
+362,Eco Shampoo,Electronics,Made from recycled materials,3.6,Yes,20.33,EcoCarry
+363,Natural Cleaning Products,Home Improvement,Low impact on the environment,3.5,Yes,11.84,GreenClean
+364,Solar Charger,Outdoor,Made from recycled materials,4.0,Yes,40.28,GreenClean
+365,Eco Shampoo,Sports,Made from recycled materials,4.7,Yes,38.48,SunPower
+366,Eco-Friendly Water Bottle,Toys,Certified organic and biodegradable,4.8,Yes,48.52,GreenLeaf
+367,Energy-Efficient Light Bulbs,Books,Sustainable and organic,4.9,Yes,44.37,SustainIt
+368,Sustainable Footwear,Office Supplies,Made from recycled materials,3.6,Yes,30.0,SustainIt
+369,Biodegradable Trash Bags,Outdoor,Made from recycled materials,3.6,Yes,9.56,BioStyle
+370,Eco-Friendly Tote Bag,Electronics,Sustainable and organic,4.9,Yes,26.76,BioStyle
+371,Solar Charger,Beauty,Ethically sourced and produced,4.0,Yes,19.12,PlanetCare
+372,Sustainable Footwear,Office Supplies,Made from recycled materials,4.3,Yes,28.06,EcoCarry
+373,Reusable Bag,Beauty,Low impact on the environment,5.0,Yes,18.58,FreshEarth
+374,Solar-Powered Gadgets,Pet Supplies,Energy-efficient and green,4.1,Yes,43.78,GreenLeaf
+375,Compostable Cutlery,Health,Certified organic and biodegradable,4.5,Yes,42.99,Nature’s Best
+376,Reusable Straw,Personal Care,Ethically sourced and produced,4.1,Yes,19.2,EcoBrand
+377,Organic Skincare,Toys,Made with renewable resources,4.7,Yes,31.98,SustainIt
+378,Organic Cotton Towel,Beauty,Sustainable and organic,4.3,Yes,24.36,ReNew
+379,Eco Shampoo,Health,Certified organic and biodegradable,3.9,Yes,45.91,BioStyle
+380,Reusable Straw,Books,Reusable and eco-conscious,3.9,Yes,13.43,EarthWise
+381,Reusable Coffee Cup,Beauty,Eco-friendly product with natural ingredients,3.9,Yes,36.4,BioStyle
+382,Reusable Coffee Cup,Home Improvement,Eco-friendly product with natural ingredients,4.3,Yes,48.67,EcoCarry
+383,Eco-Friendly Laundry Detergent,Health,Energy-efficient and green,4.6,Yes,12.89,PlanetCare
+384,Natural Cleaning Products,Beauty,Reusable and eco-conscious,4.9,Yes,14.09,SustainIt
+385,Solar Charger,Electronics,Sustainable and organic,4.5,Yes,36.22,EcoEssentials
+386,Compostable Cutlery,Electronics,Reusable and eco-conscious,4.7,Yes,40.06,ReNew
+387,Organic Skincare,Electronics,Reusable and eco-conscious,3.8,Yes,27.07,EcoEssentials
+388,Eco-Friendly Water Bottle,Health,Made from recycled materials,4.1,Yes,32.44,GreenLeaf
+389,Biodegradable Trash Bags,Clothing,Energy-efficient and green,4.1,Yes,14.57,SunPower
+390,Energy-Efficient Light Bulbs,Books,Made with renewable resources,4.5,Yes,26.45,GreenLeaf
+391,Bamboo Utensil Set,Health,Ethically sourced and produced,3.9,Yes,10.04,PureLife
+392,Solar-Powered Gadgets,Personal Care,Sustainable and organic,4.0,Yes,19.46,EcoCarry
+393,Reusable Bag,Clothing,Made from recycled materials,4.0,Yes,17.82,EcoFlex
+394,Eco-Friendly Notebook,Pet Supplies,Sustainable and organic,4.7,Yes,25.01,EcoFlex
+395,Eco-Friendly Tote Bag,Home Improvement,Eco-friendly product with natural ingredients,4.4,Yes,46.86,BioStyle
+396,Eco-Friendly Laundry Detergent,Electronics,Sustainable and organic,3.6,Yes,13.16,FreshEarth
+397,Bamboo Toothbrush,Household,Energy-efficient and green,3.6,Yes,23.06,EarthWise
+398,Solar-Powered Gadgets,Office Supplies,Eco-friendly product with natural ingredients,4.1,Yes,32.7,SustainIt
+399,Eco-Friendly Laundry Detergent,Health,Reusable and eco-conscious,4.6,Yes,47.6,EcoEssentials
+400,Natural Cleaning Products,Household,Sustainable and organic,4.5,Yes,10.99,BioStyle
+401,Organic Bedding,Sports,Made from recycled materials,4.6,Yes,46.3,SustainIt
+402,Eco-Friendly Tote Bag,Office Supplies,Sustainable and organic,4.7,Yes,8.65,GreenLeaf
+403,Organic Skincare,Food,Energy-efficient and green,3.9,Yes,26.63,EcoCarry
+404,Organic Bedding,Health,Made with renewable resources,4.3,Yes,25.46,BioStyle
+405,Organic Soap,Household,Ethically sourced and produced,4.3,Yes,14.43,EcoEssentials
+406,Biodegradable Phone Case,Toys,Low impact on the environment,4.6,Yes,20.64,ReNew
+407,Eco-Friendly Water Bottle,Health,Non-toxic and safe,4.9,Yes,25.44,Nature’s Best
+408,Eco-Friendly Laundry Detergent,Pet Supplies,Reusable and eco-conscious,3.9,Yes,43.93,FreshEarth
+409,Organic Tea,Health,Ethically sourced and produced,4.7,Yes,47.98,BioStyle
+410,Organic Tea,Health,Reusable and eco-conscious,4.5,Yes,28.35,EarthWise
+411,Reusable Bag,Health,Reusable and eco-conscious,4.4,Yes,44.15,EcoCarry
+412,Bamboo Utensil Set,Books,Sustainable and organic,4.7,Yes,32.37,GreenClean
+413,Eco-Friendly Water Bottle,Electronics,Made from recycled materials,4.9,Yes,20.71,EcoCarry
+414,Eco-Friendly Notebook,Food,Certified organic and biodegradable,3.6,Yes,13.74,PlanetCare
+415,Sustainable Fashion,Jewelry,Made from recycled materials,3.7,Yes,23.59,EcoEssentials
+416,Organic Skincare,Electronics,Eco-friendly product with natural ingredients,4.6,Yes,28.53,PureLife
+417,Biodegradable Phone Case,Electronics,Made with renewable resources,3.6,Yes,7.0,EarthWise
+418,Biodegradable Phone Case,Beauty,Made from recycled materials,4.3,Yes,11.56,Nature’s Best
+419,Compostable Cutlery,Electronics,Certified organic and biodegradable,3.8,Yes,32.01,EcoEssentials
+420,Reusable Straw,Office Supplies,Reusable and eco-conscious,3.9,Yes,15.13,EcoCarry
+421,Organic Skincare,Pet Supplies,Energy-efficient and green,4.6,Yes,42.68,GreenLeaf
+422,Eco-Friendly Packaging,Home Improvement,Made from recycled materials,3.5,Yes,19.71,GreenLeaf
+423,Compostable Cutlery,Beauty,Sustainable and organic,4.8,Yes,9.72,BioStyle
+424,Organic Tea,Outdoor,Low impact on the environment,4.2,Yes,8.76,EarthWise
+425,Eco-Friendly Packaging,Food,Ethically sourced and produced,4.3,Yes,47.17,PlanetCare
+426,Sustainable Footwear,Clothing,Certified organic and biodegradable,4.3,Yes,10.31,ReNew
+427,Eco-Friendly Packaging,Food,Energy-efficient and green,4.5,Yes,11.34,PlanetCare
+428,Reusable Coffee Cup,Books,Made from recycled materials,4.0,Yes,43.82,PlanetCare
+429,Reusable Straw,Household,Low impact on the environment,3.7,Yes,16.44,GreenClean
+430,Reusable Bag,Books,Ethically sourced and produced,4.0,Yes,34.97,PureLife
+431,Biodegradable Phone Case,Jewelry,Made from recycled materials,3.8,Yes,41.75,FreshEarth
+432,Bamboo Utensil Set,Office Supplies,Made with renewable resources,4.3,Yes,32.32,GreenLeaf
+433,Compostable Cutlery,Office Supplies,Certified organic and biodegradable,4.0,Yes,48.09,BioStyle
+434,Biodegradable Trash Bags,Food,Certified organic and biodegradable,4.9,Yes,36.9,ReNew
+435,Bamboo Toothbrush,Outdoor,Made from recycled materials,4.9,Yes,10.07,PlanetCare
+436,Organic Tea,Electronics,Made with renewable resources,4.4,Yes,30.13,EcoBrand
+437,Eco-Friendly Packaging,Home Improvement,Certified organic and biodegradable,4.4,Yes,37.32,EcoCarry
+438,Eco-Friendly Tote Bag,Pet Supplies,Ethically sourced and produced,5.0,Yes,41.09,GreenLeaf
+439,Organic Skincare,Jewelry,Made with renewable resources,4.8,Yes,6.18,PlanetCare
+440,Organic Bedding,Office Supplies,Reusable and eco-conscious,4.6,Yes,37.35,PureLife
+441,Eco-Friendly Packaging,Office Supplies,Made with renewable resources,4.0,Yes,42.16,EcoBrand
+442,Solar Charger,Home Improvement,Certified organic and biodegradable,4.0,Yes,38.61,PlanetCare
+443,Solar Charger,Food,Eco-friendly product with natural ingredients,3.8,Yes,28.06,SustainIt
+444,Sustainable Fashion,Health,Made with renewable resources,4.2,Yes,25.61,PureLife
+445,Bamboo Utensil Set,Clothing,Energy-efficient and green,5.0,Yes,29.72,GreenLeaf
+446,Organic Bedding,Personal Care,Certified organic and biodegradable,4.9,Yes,36.71,EcoFlex
+447,Sustainable Footwear,Outdoor,Energy-efficient and green,3.7,Yes,46.53,GreenLeaf
+448,Biodegradable Trash Bags,Toys,Energy-efficient and green,3.5,Yes,32.77,PlanetCare
+449,Organic Soap,Jewelry,Eco-friendly product with natural ingredients,4.8,Yes,44.95,Nature’s Best
+450,Organic Cotton Towel,Food,Energy-efficient and green,4.3,Yes,36.56,EcoBrand
+451,Organic Bedding,Food,Certified organic and biodegradable,3.8,Yes,8.08,BioStyle
+452,Organic Soap,Food,Eco-friendly product with natural ingredients,4.5,Yes,27.54,BioStyle
+453,Solar-Powered Gadgets,Books,Eco-friendly product with natural ingredients,4.5,Yes,17.89,Nature’s Best
+454,Eco-Friendly Laundry Detergent,Household,Energy-efficient and green,3.7,Yes,17.83,EarthWise
+455,Organic Bedding,Personal Care,Made with renewable resources,3.9,Yes,21.02,BioStyle
+456,Solar-Powered Gadgets,Personal Care,Made from recycled materials,3.6,Yes,19.16,EcoFlex
+457,Sustainable Footwear,Personal Care,Made with renewable resources,3.8,Yes,31.04,EcoCarry
+458,Sustainable Footwear,Personal Care,Made with renewable resources,3.7,Yes,35.76,EcoFlex
+459,Compostable Cutlery,Jewelry,Reusable and eco-conscious,3.8,Yes,17.09,EcoCarry
+460,Eco-Friendly Notebook,Toys,Reusable and eco-conscious,4.5,Yes,10.84,ReNew
+461,Bamboo Utensil Set,Office Supplies,Sustainable and organic,3.6,Yes,7.65,SustainIt
+462,Eco-Friendly Notebook,Pet Supplies,Made with renewable resources,3.7,Yes,30.91,EcoCarry
+463,Sustainable Footwear,Personal Care,Eco-friendly product with natural ingredients,3.7,Yes,13.38,ReNew
+464,Eco Shampoo,Pet Supplies,Made with renewable resources,4.0,Yes,5.42,EarthWise
+465,Solar-Powered Gadgets,Toys,Ethically sourced and produced,3.9,Yes,46.75,EarthWise
+466,Eco-Friendly Packaging,Sports,Non-toxic and safe,3.9,Yes,29.17,EcoEssentials
+467,Solar Charger,Health,Made with renewable resources,4.6,Yes,9.16,EarthWise
+468,Bamboo Utensil Set,Beauty,Sustainable and organic,5.0,Yes,42.93,EcoCarry
+469,Biodegradable Trash Bags,Food,Sustainable and organic,4.3,Yes,49.24,EarthWise
+470,Eco-Friendly Laundry Detergent,Clothing,Reusable and eco-conscious,4.9,Yes,25.19,EarthWise
+471,Organic Tea,Beauty,Energy-efficient and green,4.1,Yes,6.91,EcoCarry
+472,Reusable Bag,Clothing,Sustainable and organic,3.7,Yes,10.29,Nature’s Best
+473,Eco-Friendly Water Bottle,Food,Energy-efficient and green,4.1,Yes,22.17,FreshEarth
+474,Organic Soap,Office Supplies,Ethically sourced and produced,3.9,Yes,44.85,FreshEarth
+475,Biodegradable Trash Bags,Office Supplies,Certified organic and biodegradable,4.2,Yes,11.66,SunPower
+476,Solar Charger,Toys,Reusable and eco-conscious,4.5,Yes,42.08,EcoFlex
+477,Solar Charger,Household,Sustainable and organic,4.2,Yes,5.67,ReNew
+478,Organic Tea,Beauty,Low impact on the environment,4.9,Yes,25.58,ReNew
+479,Organic Tea,Office Supplies,Made from recycled materials,4.8,Yes,34.0,GreenClean
+480,Reusable Coffee Cup,Health,Eco-friendly product with natural ingredients,4.6,Yes,7.72,PlanetCare
+481,Eco-Friendly Water Bottle,Sports,Made from recycled materials,4.2,Yes,32.66,BioStyle
+482,Organic Skincare,Clothing,Non-toxic and safe,3.7,Yes,47.5,ReNew
+483,Reusable Straw,Personal Care,Ethically sourced and produced,4.1,Yes,12.21,PureLife
+484,Natural Cleaning Products,Pet Supplies,Sustainable and organic,4.6,Yes,37.83,SustainIt
+485,Biodegradable Trash Bags,Personal Care,Made from recycled materials,3.9,Yes,32.41,EcoEssentials
+486,Biodegradable Phone Case,Sports,Made with renewable resources,3.7,Yes,13.33,SustainIt
+487,Eco-Friendly Notebook,Toys,Sustainable and organic,4.9,Yes,5.28,BioStyle
+488,Reusable Coffee Cup,Office Supplies,Sustainable and organic,4.6,Yes,5.42,SustainIt
+489,Reusable Bag,Beauty,Made with renewable resources,4.4,Yes,28.94,EcoCarry
+490,Solar-Powered Gadgets,Pet Supplies,Non-toxic and safe,4.7,Yes,47.43,ReNew
+491,Sustainable Fashion,Beauty,Energy-efficient and green,4.8,Yes,33.99,PlanetCare
+492,Eco-Friendly Tote Bag,Personal Care,Reusable and eco-conscious,4.2,Yes,37.14,EcoBrand
+493,Bamboo Utensil Set,Personal Care,Eco-friendly product with natural ingredients,4.8,Yes,27.22,Nature’s Best
+494,Eco-Friendly Water Bottle,Home Improvement,Made from recycled materials,4.9,Yes,31.19,EcoCarry
+495,Bamboo Toothbrush,Clothing,Reusable and eco-conscious,3.9,Yes,10.69,PureLife
+496,Organic Soap,Clothing,Energy-efficient and green,4.4,Yes,44.46,EarthWise
+497,Natural Cleaning Products,Food,Eco-friendly product with natural ingredients,4.3,Yes,39.24,GreenLeaf
+498,Reusable Bag,Outdoor,Eco-friendly product with natural ingredients,4.3,Yes,49.92,PlanetCare
+499,Sustainable Fashion,Jewelry,Non-toxic and safe,4.9,Yes,18.4,SustainIt
+500,Solar Charger,Outdoor,Made from recycled materials,4.0,Yes,15.22,PlanetCare

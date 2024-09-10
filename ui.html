@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAdvisor Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 400px;
+            max-width: 100%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background-color: #3ca141;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .chat-box {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            background-color: #e5e5e5;
+        }
+
+        .chat-message {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .user-message {
+            background-color: #d1ffd6;
+            align-self: flex-end;
+        }
+
+        .bot-message {
+            background-color: #fff;
+            align-self: flex-start;
+        }
+
+        .chat-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            outline: none;
+        }
+
+        .chat-input button {
+            padding: 1rem;
+            background-color: #3ca141;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>EcoAdvisor Chat</h1>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        function sendMessage() {
+            const userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === "") return;
+
+            // Add user's message to the chat
+            addMessageToChat(userInput, 'user-message');
+
+            // Get bot response
+            const botResponse = getBotResponse(userInput);
+
+            // Add bot's response to the chat
+            setTimeout(() => {
+                addMessageToChat(botResponse, 'bot-message');
+            }, 500); // Simulate a delay for the bot's response
+
+            // Clear the input field
+            document.getElementById('user-input').value = "";
+        }
+
+        function addMessageToChat(message, className) {
+            const chatBox = document.getElementById('chat-box');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('chat-message', className);
+            messageDiv.textContent = message;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+        }
+
+        function getBotResponse(userInput) {
+            // Static responses based on user input
+            const responses = {
+                "how can we reduce plastic": "Here are some ways to reduce plastic: use reusable bags, bottles, and containers, avoid single-use plastics, recycle properly, and support bans on plastic products.",
+                "what are eco-friendly products": "Eco-friendly products include reusable shopping bags, stainless steel water bottles, bamboo toothbrushes, and biodegradable cleaning supplies.",
+                "how to start composting": "To start composting, collect kitchen scraps and yard waste, mix them in a compost bin, and turn it regularly to speed up decomposition.",
+                "what are the benefits of recycling": "Recycling helps reduce landfill waste, conserves natural resources, saves energy, and reduces pollution."
+            };
+
+            // Return the response if it exists, or a default message
+            return responses[userInput.toLowerCase()] || "Sorry, I don't have an answer for that. Try asking about reducing plastic or eco-friendly products.";
+        }
+    </script>
+</body>
+</html>

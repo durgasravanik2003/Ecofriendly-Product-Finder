@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #result {
+            font-size: 18px;
+            color: #333;
+            text-align: left;
+            display: block;
+            margin-top: 20px;
+        }
+
+        #result h2 {
+            font-size: 22px;
+            color: #28a745;
+        }
+
+        #result p {
+            font-size: 20px;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        #result ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #result ul li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .positive-message {
+            background-color: #e0ffe0;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #155724;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .tree-emojis {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
+        <form id="footprint-form">
+            <label for="household-size">Household Size:</label>
+            <input type="number" id="household-size" name="householdSize" min="1" required>
+
+            <label for="daily-activities">Daily Activities (hours of driving per week):</label>
+            <input type="number" id="daily-activities" name="dailyActivities" min="0" required>
+
+            <label for="diet">Diet Preferences:</label>
+            <select id="diet" name="diet" required>
+                <option value="high-meat">High Meat Consumption</option>
+                <option value="moderate-meat">Moderate Meat Consumption</option>
+                <option value="low-meat">Low Meat Consumption</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select>
+
+            <label for="waste-management">Waste Management (bags of trash per week):</label>
+            <input type="number" id="waste-management" name="wasteManagement" min="0" required>
+
+            <button type="submit">Calculate Footprint</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('footprint-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const householdSize = document.getElementById('household-size').value;
+            const dailyActivities = document.getElementById('daily-activities').value;
+            const diet = document.getElementById('diet').value;
+            const wasteManagement = document.getElementById('waste-management').value;
+
+            // Hide the form after submission
+            document.getElementById('footprint-form').style.display = 'none';
+
+            // Calculate footprint based on user inputs
+            const carbonFootprint = calculateFootprint(householdSize, dailyActivities, diet, wasteManagement);
+
+            // Calculate the number of trees to plant to offset the carbon footprint
+            const co2OffsetPerTree = 22; // kg of CO2 offset by one tree per year
+            const treesToPlant = Math.ceil(carbonFootprint / co2OffsetPerTree); // Round up to the nearest whole tree
+
+            // Generate tree emojis based on the number of trees to plant
+            const maxEmojis = 50; // Set a reasonable max limit for tree emojis
+            const treeEmojis = "🌳".repeat(Math.min(treesToPlant, maxEmojis));
+
+            // Get tips based on the footprint value
+            const { tips } = getFootprintMessageAndTips(carbonFootprint);
+
+            // Display the carbon footprint value, number of trees to plant, and tips
+            document.getElementById('result').innerHTML = `
+                <h2>Your Carbon Footprint:</h2>
+                <p>${carbonFootprint.toFixed(2)} kg CO2 per year</p>
+                <div class="positive-message">
+                    <div class="tree-emojis">${treeEmojis}</div>
+                    <p>To balance this, you should plant approximately ${treesToPlant} tree${treesToPlant > 1 ? 's' : ''}.</p>
+                </div>
+                <h2>Tips to Reduce Your Carbon Footprint:</h2>
+                <ul>
+                    ${tips.map(tip => `<li>${tip}</li>`).join('')}
+                </ul>
+            `;
+        });
+
+        function calculateFootprint(householdSize, dailyActivities, diet, wasteManagement) {
+            // Simplified calculation logic
+            const dailyActivitiesFactor = dailyActivities * 0.4; // kg CO2 per hour of driving
+            const dietFactor = { 'high-meat': 3, 'moderate-meat': 2, 'low-meat': 1.5, 'vegetarian': 1, 'vegan': 0.5 }[diet];
+            const wasteManagementFactor = wasteManagement * 2; // kg CO2 per bag of trash
+
+            return (householdSize * 2) + dailyActivitiesFactor + dietFactor + wasteManagementFactor;
+        }
+
+        function getFootprintMessageAndTips(carbonFootprint) {
+            let tips = [];
+
+            if (carbonFootprint <= 500) {
+                tips = [
+                    "Use public transport or carpool.",
+                    "Switch to biodegradable products.",
+                    "Reduce food waste.",
+                    "Conserve water."
+                ];
+            } else if (carbonFootprint > 500 && carbonFootprint <= 1000) {
+                tips = [
+                    "Use alternative transportation.",
+                    "Minimize plastic packaging.",
+                    "Switch to energy-efficient appliances.",
+                    "Start composting."
+                ];
+            } else if (carbonFootprint > 1000 && carbonFootprint <= 1500) {
+                tips = [
+                    "Cut down on meat consumption.",
+                    "Choose eco-friendly materials.",
+                    "Improve home insulation.",
+                    "Consider renewable energy sources."
+                ];
+            } else if (carbonFootprint > 1500 && carbonFootprint <= 2000) {
+                tips = [
+                    "Avoid single-use plastics.",
+                    "Limit water usage.",
+                    "Reduce overall energy consumption.",
+                    "Support reforestation projects."
+                ];
+            } else {
+                tips = [
+                    "Switch to a plant-based diet.",
+                    "Use electric or hybrid vehicles.",
+                    "Drastically reduce plastic usage.",
+                    "Participate in carbon offset programs."
+                ];
+            }
+
+            return { tips };
+        }
+    </script>
+</body>
+</html>

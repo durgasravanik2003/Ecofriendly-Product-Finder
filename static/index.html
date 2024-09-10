@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+</head>
+<body>
+    <h1>Get Product Recommendations</h1>
+    <form id="recommendation-form">
+        <!-- <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required><br><br> -->
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option value="toys">Toys</option>
+            <option value="household">Household</option>
+            <option value="personal care">Personal Care</option>
+            <option value="sports">Sports</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="clothing">Clothing</option>
+            <option value="beauty">Beauty</option>
+            <option value="food">Food</option>
+            <option value="health">Health</option>
+            <option value="home improvement">Home Improvement</option>
+            <option value="electronics">Electronics</option>
+            <option value="pet supplies">Pet Supplies</option>
+        </select><br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required><br><br>
+
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" name="brand" required><br><br>
+
+        <label for="price">Price Range:</label>
+        <select id="price" name="price" required>
+            <option value="">Select Price Range</option>
+            <option value="0-10">0-10</option>
+            <option value="10-20">10-20</option>
+            <option value="20-30">20-30</option>
+            <option value="30-40">30-40</option>
+            <option value="40-50">40-50</option>
+        </select><br><br>
+
+        <button type="button" onclick="getRecommendations()">Get Recommendations</button>
+    </form>
+
+    <div id="results-container">
+        <h2 id="results-heading">Recommendations</h2>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        function getRecommendations() {
+            const form = document.getElementById('recommendation-form');
+            const formData = new FormData(form);
+
+            fetch('/recommend', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    product_name: formData.get('product_name'),
+                    category: formData.get('category'),
+                    description: formData.get('description'),
+                    brand: formData.get('brand'),
+                    price: formData.get('price')
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '';
+                
+                // Ensure data is an array
+                if (Array.isArray(data)) {
+                    data.forEach(item => {
+                        resultsDiv.innerHTML += `
+                            <p>
+                                Product Name: ${item.product_name}<br>
+                                Category: ${item.category}<br>
+                                Description: ${item.description}<br>
+                                Brand: ${item.brand}<br>
+                                Price: ${item.price}
+                            </p>`;
+                    });
+                } else {
+                    resultsDiv.innerHTML = '<p>No recommendations found.</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('results').innerHTML = '<p>There was an error fetching recommendations. Please try again later.</p>';
+            });
+        }
+    </script>
+</body>
+</html>

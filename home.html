@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWorld</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            background-color: #3ca141;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+        }
+
+        .login-link {
+            margin-left: auto; /* Pushes the login link to the right */
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        .image-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 470px; /* Explicit height */
+        }
+
+        .big {
+            color:#3ca141;
+            font-size:70px;
+            margin-left: 90px;
+        }
+        .big p{
+            margin-top: 30px;
+            font-size: 50px;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%; /* Fill the container */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your guide to sustainable fashion and living</i></p>
+        <a href="login.html" class="login-link">Login</a>
+    </header>
+    <main>
+        <h1 class="big">EcoWorld</h1>
+        <p style="font-size: 18px;"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to EcoWorld, where you can find the best tips and products for living a sustainable, zero-waste, and stylish life.</i></p>
+    </main>
+    <div class="image-container">
+        <img src="front.jpg" alt="Eco Fashion">
+    </div>
+</body>
+</html>

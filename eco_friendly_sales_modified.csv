@@ -1,0 +1,501 @@
+Date,Product,Category,Sales,Sustainability_Score
+2024-02-21,Eco-Friendly Stationery,Organic Products,111,0.8536032371975933
+2024-04-02,Recycled Paper Products,Energy Efficiency,81,2.2861547429071822
+2024-01-15,Energy-Efficient Appliances,Organic Products,78,1.0972208931937715
+2024-03-12,Reusable Bags,Recycled Materials,98,3.0539338171770116
+2024-03-01,Compostable Utensils,Energy Efficiency,79,3.6025923611176958
+2024-01-21,Water-Efficient Toilets,Energy Efficiency,193,4.102640145990873
+2024-03-23,Organic Food,Sustainable Packaging,68,1.4006760991016454
+2024-03-27,Organic Cotton Clothing,Sustainable Packaging,67,1.253671620165814
+2024-03-15,Eco-Friendly Stationery,Energy Efficiency,50,0.9705552815048011
+2024-03-15,Reusable Bags,Recycled Materials,127,3.363936122946365
+2024-03-28,Organic Personal Care Products,Recycled Materials,164,3.679140769191055
+2024-04-09,LED Bulbs,Organic Products,162,0.6421376517153892
+2024-01-24,Organic Cotton Clothing,Sustainable Packaging,163,4.712955108096605
+2024-01-03,Organic Cotton Clothing,Sustainable Packaging,112,0.7338707764316259
+2024-01-22,Organic Cotton Clothing,Sustainable Packaging,181,2.935833508854817
+2024-02-22,Biodegradable Packaging,Energy Efficiency,178,3.6907723375291237
+2024-01-02,Reusable Bags,Sustainable Packaging,57,4.419361056857385
+2024-03-28,Eco-Friendly Stationery,Water Conservation,104,3.7133911945959253
+2024-01-30,Recycled Paper Products,Recycled Materials,152,4.107776373814064
+2024-02-07,Recycled Paper Products,Recycled Materials,180,2.0275258664426272
+2024-01-02,Reusable Bags,Organic Products,81,4.166713011859305
+2024-03-04,Low-Flow Showerheads,Energy Efficiency,59,0.8605168087310382
+2024-02-29,Biodegradable Packaging,Energy Efficiency,159,4.526674952272375
+2024-01-21,LED Bulbs,Organic Products,173,2.964165692691813
+2024-02-02,Organic Cotton Clothing,Recycled Materials,136,4.177839964831222
+2024-03-16,Organic Cotton Clothing,Organic Products,104,2.535432280332351
+2024-02-27,Reusable Bags,Recycled Materials,81,3.3960996283843623
+2024-01-22,Low-Flow Showerheads,Water Conservation,184,2.8688119742125093
+2024-03-29,Recycled Paper Products,Recycled Materials,142,3.7921528478989934
+2024-02-18,Recycled Paper Products,Water Conservation,57,0.8673349191376531
+2024-03-31,Compostable Utensils,Organic Products,114,0.7715843779575371
+2024-02-28,Reusable Bags,Water Conservation,106,1.611964553045659
+2024-02-11,Biodegradable Packaging,Sustainable Packaging,116,1.2179510605093475
+2024-04-01,Solar Panels,Organic Products,121,4.423026049664907
+2024-02-29,Biodegradable Packaging,Water Conservation,103,1.4864629431111993
+2024-03-20,Organic Personal Care Products,Organic Products,116,4.891393651186091
+2024-01-15,Recycled Paper Products,Recycled Materials,100,2.0160310629699807
+2024-03-02,Recycled Paper Products,Organic Products,146,1.3195306205991468
+2024-03-02,Energy-Efficient Appliances,Organic Products,141,4.053643282141156
+2024-02-16,Recycled Paper Products,Energy Efficiency,57,3.4641849897539423
+2024-03-02,LED Bulbs,Recycled Materials,84,2.7418807240391256
+2024-02-20,Rainwater Harvesting Systems,Sustainable Packaging,145,2.9991359792193406
+2024-02-24,Reusable Bags,Energy Efficiency,137,3.736408002225187
+2024-03-04,Organic Food,Water Conservation,127,1.5280463359908443
+2024-01-03,Biodegradable Packaging,Energy Efficiency,81,4.9835026222553385
+2024-02-20,Rainwater Harvesting Systems,Energy Efficiency,169,4.886569229660524
+2024-01-07,Low-Flow Showerheads,Organic Products,95,3.426465588561216
+2024-01-21,Solar Panels,Sustainable Packaging,193,1.3979410291811531
+2024-03-13,LED Bulbs,Organic Products,191,3.561027090940811
+2024-02-08,Eco-Friendly Stationery,Organic Products,104,0.8248928404062913
+2024-01-18,Recycled Plastic Furniture,Organic Products,56,0.6379362599261273
+2024-01-04,Biodegradable Packaging,Water Conservation,123,1.6595729983004617
+2024-03-29,Rainwater Harvesting Systems,Sustainable Packaging,56,2.5818033053269236
+2024-02-29,Eco-Friendly Stationery,Organic Products,134,4.407226274337712
+2024-01-14,Solar Panels,Recycled Materials,196,3.772260813948386
+2024-01-09,Energy-Efficient Appliances,Recycled Materials,161,3.8421793453999147
+2024-03-30,Eco-Friendly Stationery,Water Conservation,174,2.4147200050163393
+2024-02-22,LED Bulbs,Organic Products,196,2.056707466461333
+2024-01-02,LED Bulbs,Water Conservation,85,2.1696744334307123
+2024-03-24,Organic Food,Energy Efficiency,78,4.94442303681226
+2024-04-01,Energy-Efficient Appliances,Organic Products,131,0.6804913613561712
+2024-02-29,Recycled Plastic Furniture,Recycled Materials,51,4.401641732551019
+2024-03-11,Reusable Bags,Organic Products,178,3.1040393385757703
+2024-02-13,Eco-Friendly Stationery,Recycled Materials,96,2.4737693863531574
+2024-01-08,Energy-Efficient Appliances,Water Conservation,197,3.7636594718681144
+2024-02-16,LED Bulbs,Energy Efficiency,60,2.6900102364111627
+2024-02-04,LED Bulbs,Water Conservation,179,4.430404571367473
+2024-03-18,Rainwater Harvesting Systems,Energy Efficiency,168,4.553158388050663
+2024-03-21,Recycled Paper Products,Organic Products,189,2.397744170930549
+2024-02-05,Recycled Plastic Furniture,Water Conservation,69,1.7457250875577321
+2024-02-19,Eco-Friendly Stationery,Organic Products,54,3.16557647867013
+2024-01-04,Organic Food,Recycled Materials,86,4.605635055275109
+2024-01-02,Organic Food,Organic Products,186,1.4479798505254995
+2024-01-06,Eco-Friendly Stationery,Recycled Materials,102,3.3033496260356725
+2024-02-23,Organic Personal Care Products,Organic Products,148,3.3420209904163425
+2024-01-04,Organic Cotton Clothing,Energy Efficiency,135,3.7990086008687642
+2024-02-23,Solar Panels,Recycled Materials,157,1.0920545830726691
+2024-04-02,Organic Food,Sustainable Packaging,73,3.7212123410693985
+2024-03-03,Energy-Efficient Appliances,Energy Efficiency,130,4.5906463429953845
+2024-01-18,Solar Panels,Energy Efficiency,169,1.3085739899160889
+2024-03-30,Energy-Efficient Appliances,Organic Products,108,1.5689449621574494
+2024-02-13,Low-Flow Showerheads,Water Conservation,177,4.871277923187378
+2024-02-03,LED Bulbs,Water Conservation,163,1.314396287192704
+2024-03-14,Recycled Paper Products,Sustainable Packaging,164,4.344732920163106
+2024-03-02,Rainwater Harvesting Systems,Recycled Materials,63,2.7152503540161566
+2024-04-09,Organic Food,Recycled Materials,58,1.6125398348142967
+2024-01-14,Recycled Paper Products,Water Conservation,89,4.4183745557263014
+2024-04-04,Recycled Paper Products,Water Conservation,74,2.5038736475119947
+2024-02-17,Recycled Paper Products,Energy Efficiency,152,2.8166780926836057
+2024-01-15,Organic Cotton Clothing,Water Conservation,71,2.1165501622989455
+2024-03-12,Solar Panels,Sustainable Packaging,53,3.1682788314571733
+2024-03-18,Energy-Efficient Appliances,Recycled Materials,78,1.2358574266326023
+2024-03-27,Water-Efficient Toilets,Organic Products,158,2.259866914932923
+2024-03-02,Low-Flow Showerheads,Recycled Materials,147,4.862355450508794
+2024-02-09,Biodegradable Packaging,Water Conservation,86,1.6616004471550738
+2024-03-25,Recycled Paper Products,Energy Efficiency,124,3.4553149904358147
+2024-03-20,Reusable Bags,Organic Products,119,1.963355289011127
+2024-03-22,Solar Panels,Sustainable Packaging,195,3.980629065589703
+2024-02-22,Organic Food,Water Conservation,177,1.088931473232574
+2024-01-24,Recycled Plastic Furniture,Sustainable Packaging,134,4.864194702853451
+2024-01-26,Organic Food,Recycled Materials,91,2.5420529362263764
+2024-03-29,Rainwater Harvesting Systems,Energy Efficiency,149,1.5622270850590878
+2024-02-29,Biodegradable Packaging,Water Conservation,90,0.8307353629850569
+2024-02-10,Water-Efficient Toilets,Organic Products,83,1.2639105728939333
+2024-01-29,Reusable Bags,Energy Efficiency,66,2.8389827685020794
+2024-01-15,Organic Food,Organic Products,171,2.016514293940788
+2024-02-14,Water-Efficient Toilets,Sustainable Packaging,125,4.229975146471743
+2024-03-05,Biodegradable Packaging,Organic Products,136,2.4389938564781266
+2024-03-29,Recycled Paper Products,Sustainable Packaging,166,1.6192142266443346
+2024-03-11,Reusable Bags,Energy Efficiency,155,3.2771524397181353
+2024-01-09,Water-Efficient Toilets,Organic Products,135,3.680497475984506
+2024-03-28,Rainwater Harvesting Systems,Water Conservation,76,1.2516885855542743
+2024-01-01,Energy-Efficient Appliances,Water Conservation,106,1.2542864732974295
+2024-01-08,LED Bulbs,Energy Efficiency,80,0.6650214212009433
+2024-03-28,Energy-Efficient Appliances,Recycled Materials,183,3.813809067795382
+2024-03-03,Biodegradable Packaging,Energy Efficiency,147,3.4871203742981227
+2024-01-11,Solar Panels,Recycled Materials,61,2.6358389408741623
+2024-03-21,LED Bulbs,Water Conservation,102,4.298767020361387
+2024-01-08,Low-Flow Showerheads,Sustainable Packaging,187,4.1255156882752395
+2024-02-04,Rainwater Harvesting Systems,Sustainable Packaging,194,3.134094639785385
+2024-02-04,Low-Flow Showerheads,Sustainable Packaging,171,4.407220762309664
+2024-02-02,Organic Cotton Clothing,Recycled Materials,95,1.4262854451654572
+2024-01-05,Reusable Bags,Energy Efficiency,113,1.0036382872897756
+2024-02-10,Eco-Friendly Stationery,Recycled Materials,179,1.7138732518264532
+2024-01-28,LED Bulbs,Water Conservation,103,0.7568908524019169
+2024-01-07,Low-Flow Showerheads,Recycled Materials,156,2.890262876004644
+2024-03-13,Organic Food,Organic Products,100,4.7147256153273265
+2024-03-12,Low-Flow Showerheads,Sustainable Packaging,85,0.6770459330082934
+2024-01-12,Water-Efficient Toilets,Sustainable Packaging,164,1.0494946130451206
+2024-02-03,Energy-Efficient Appliances,Water Conservation,75,2.534895627275459
+2024-02-02,Water-Efficient Toilets,Energy Efficiency,78,4.702437578875572
+2024-02-17,Organic Cotton Clothing,Sustainable Packaging,198,1.9227024723953772
+2024-01-23,LED Bulbs,Sustainable Packaging,60,2.782556639097766
+2024-03-02,LED Bulbs,Sustainable Packaging,89,0.6870778657267644
+2024-03-28,Organic Cotton Clothing,Sustainable Packaging,60,1.1675444043293999
+2024-02-06,Biodegradable Packaging,Sustainable Packaging,162,4.939835553314811
+2024-04-08,Water-Efficient Toilets,Water Conservation,88,4.843034133962205
+2024-02-13,Compostable Utensils,Sustainable Packaging,103,0.5222299142048432
+2024-03-26,Organic Food,Organic Products,147,4.783153034404576
+2024-03-31,Recycled Plastic Furniture,Recycled Materials,104,3.376039720169752
+2024-02-04,Energy-Efficient Appliances,Organic Products,160,4.4056323253400995
+2024-03-05,LED Bulbs,Organic Products,199,2.546329350352366
+2024-04-08,Biodegradable Packaging,Organic Products,118,2.820182128606626
+2024-02-16,Eco-Friendly Stationery,Organic Products,105,2.699809611156141
+2024-03-18,Organic Food,Water Conservation,82,3.5008891589574693
+2024-01-03,Water-Efficient Toilets,Water Conservation,85,1.128430646403408
+2024-01-01,Energy-Efficient Appliances,Water Conservation,197,0.6348811544270507
+2024-01-05,Eco-Friendly Stationery,Water Conservation,130,1.8856847371603591
+2024-03-30,Water-Efficient Toilets,Energy Efficiency,158,3.6710634323149103
+2024-01-14,Low-Flow Showerheads,Energy Efficiency,122,1.4083405345532676
+2024-01-27,Eco-Friendly Stationery,Organic Products,89,3.530445949962128
+2024-01-09,Organic Cotton Clothing,Water Conservation,66,4.864604207482717
+2024-03-19,Organic Personal Care Products,Sustainable Packaging,178,0.9225532210523828
+2024-01-15,Biodegradable Packaging,Sustainable Packaging,110,3.526709532013068
+2024-03-30,Energy-Efficient Appliances,Water Conservation,153,2.4968759868705703
+2024-02-11,Recycled Paper Products,Organic Products,91,4.406640144698774
+2024-03-17,Organic Personal Care Products,Sustainable Packaging,74,1.2971740525132365
+2024-02-20,Reusable Bags,Energy Efficiency,88,3.61681678501774
+2024-03-03,Reusable Bags,Sustainable Packaging,84,4.271518803416496
+2024-04-05,Energy-Efficient Appliances,Recycled Materials,180,4.750763987633104
+2024-02-21,Eco-Friendly Stationery,Recycled Materials,157,3.5746161273034063
+2024-04-05,Water-Efficient Toilets,Sustainable Packaging,151,2.737286438037923
+2024-01-04,Biodegradable Packaging,Organic Products,147,3.2803125809054623
+2024-04-03,Recycled Plastic Furniture,Sustainable Packaging,61,4.410072430154232
+2024-01-23,Reusable Bags,Sustainable Packaging,68,3.0677438598747337
+2024-01-15,Biodegradable Packaging,Energy Efficiency,150,0.6367417686357659
+2024-02-12,Reusable Bags,Organic Products,93,4.6892691297814
+2024-01-29,Low-Flow Showerheads,Water Conservation,98,3.602870379642025
+2024-02-05,Water-Efficient Toilets,Sustainable Packaging,66,3.5443102359976093
+2024-01-13,Low-Flow Showerheads,Energy Efficiency,123,1.4705381857897273
+2024-02-01,Organic Food,Organic Products,106,3.4649846160469573
+2024-03-11,Reusable Bags,Water Conservation,104,2.272389825443713
+2024-02-28,Recycled Paper Products,Energy Efficiency,96,3.4305483966867145
+2024-03-26,Recycled Paper Products,Organic Products,61,0.9796686363859582
+2024-01-28,Low-Flow Showerheads,Recycled Materials,111,3.460303870713662
+2024-03-06,Organic Cotton Clothing,Water Conservation,129,4.997361765968
+2024-02-11,Organic Personal Care Products,Recycled Materials,132,0.7169541748725021
+2024-02-14,Recycled Paper Products,Energy Efficiency,57,4.897283828995928
+2024-03-02,Reusable Bags,Organic Products,198,2.3310858232529177
+2024-02-26,Energy-Efficient Appliances,Recycled Materials,130,4.418390526517666
+2024-01-06,Low-Flow Showerheads,Sustainable Packaging,167,4.02073467826223
+2024-01-28,Organic Food,Sustainable Packaging,74,3.051573174440005
+2024-01-28,Recycled Plastic Furniture,Recycled Materials,138,3.8230214416309694
+2024-02-13,Recycled Plastic Furniture,Sustainable Packaging,61,4.4533200258560655
+2024-03-24,Solar Panels,Sustainable Packaging,192,2.3186314474296483
+2024-01-30,Organic Personal Care Products,Energy Efficiency,108,1.971649227034574
+2024-03-02,Eco-Friendly Stationery,Sustainable Packaging,158,3.5041702350361312
+2024-03-15,Water-Efficient Toilets,Energy Efficiency,75,4.135306738735664
+2024-04-01,Recycled Paper Products,Sustainable Packaging,96,3.930283106494771
+2024-03-29,Recycled Paper Products,Energy Efficiency,81,4.090161419863855
+2024-03-02,Eco-Friendly Stationery,Recycled Materials,59,2.4601249166581987
+2024-04-06,LED Bulbs,Organic Products,65,4.180253972787597
+2024-01-01,Organic Food,Energy Efficiency,194,1.040940749167738
+2024-01-27,Compostable Utensils,Recycled Materials,75,2.950200940823823
+2024-03-02,Low-Flow Showerheads,Organic Products,135,0.5259139722415471
+2024-03-17,Organic Cotton Clothing,Sustainable Packaging,184,1.9606362345512163
+2024-01-03,Organic Food,Sustainable Packaging,63,2.1490769069212905
+2024-03-10,Rainwater Harvesting Systems,Organic Products,128,2.282777112241649
+2024-03-12,Recycled Paper Products,Recycled Materials,166,3.62960243010438
+2024-01-27,Water-Efficient Toilets,Organic Products,56,2.2485114557165558
+2024-01-09,Solar Panels,Sustainable Packaging,186,2.519121301801388
+2024-03-02,Recycled Plastic Furniture,Organic Products,164,1.5689485889344736
+2024-02-06,Recycled Paper Products,Recycled Materials,121,2.17963306233203
+2024-04-06,Solar Panels,Energy Efficiency,108,1.5227133226841816
+2024-02-20,Reusable Bags,Energy Efficiency,131,0.8293816569579964
+2024-02-13,Organic Food,Sustainable Packaging,165,3.2155186702162006
+2024-01-24,Reusable Bags,Energy Efficiency,195,3.506957593497573
+2024-03-19,Compostable Utensils,Water Conservation,152,3.2877065570432653
+2024-02-28,Energy-Efficient Appliances,Recycled Materials,66,2.585723197102576
+2024-02-01,Rainwater Harvesting Systems,Sustainable Packaging,63,2.209036010806534
+2024-04-05,Organic Food,Water Conservation,157,4.385001423073214
+2024-03-28,LED Bulbs,Recycled Materials,94,2.8358680331129813
+2024-02-21,Compostable Utensils,Recycled Materials,147,2.6563184493337895
+2024-03-02,Biodegradable Packaging,Energy Efficiency,180,0.6153892961289607
+2024-02-27,LED Bulbs,Organic Products,86,2.0356152243177035
+2024-02-21,Organic Personal Care Products,Water Conservation,157,2.2108802845363567
+2024-01-12,Low-Flow Showerheads,Energy Efficiency,88,2.294702514036052
+2024-02-08,Water-Efficient Toilets,Sustainable Packaging,64,3.1107756615229953
+2024-01-02,Organic Food,Energy Efficiency,169,2.901211460270953
+2024-01-03,Biodegradable Packaging,Organic Products,53,3.235572917570501
+2024-02-25,Biodegradable Packaging,Sustainable Packaging,142,3.9419746769395774
+2024-03-21,Compostable Utensils,Water Conservation,190,4.158435824222421
+2024-02-28,Eco-Friendly Stationery,Energy Efficiency,65,3.731553843019225
+2024-01-02,Organic Personal Care Products,Water Conservation,157,4.799856631797206
+2024-01-02,Energy-Efficient Appliances,Recycled Materials,175,0.5820466220436273
+2024-04-01,Organic Food,Organic Products,104,1.3810009355759574
+2024-02-23,Eco-Friendly Stationery,Water Conservation,83,0.5340329374016395
+2024-03-27,Compostable Utensils,Sustainable Packaging,62,3.4136362136957135
+2024-04-05,Low-Flow Showerheads,Water Conservation,190,4.541137470274941
+2024-04-06,Recycled Plastic Furniture,Energy Efficiency,67,1.5956703345933467
+2024-01-01,Recycled Paper Products,Organic Products,145,4.67165545158338
+2024-01-19,Recycled Paper Products,Organic Products,172,0.7712032563030238
+2024-01-02,Energy-Efficient Appliances,Energy Efficiency,88,4.704962120624814
+2024-02-22,Low-Flow Showerheads,Sustainable Packaging,95,2.082302092578355
+2024-02-13,Organic Cotton Clothing,Organic Products,78,0.9563937280214743
+2024-03-30,Energy-Efficient Appliances,Recycled Materials,111,2.6864229163384654
+2024-02-01,Organic Food,Recycled Materials,65,1.6554945547422857
+2024-03-10,Organic Food,Energy Efficiency,170,1.7819280588286528
+2024-02-01,Solar Panels,Organic Products,59,1.8828048421682895
+2024-03-08,Eco-Friendly Stationery,Sustainable Packaging,152,4.113616540246985
+2024-02-24,Organic Cotton Clothing,Water Conservation,133,2.926225745038645
+2024-03-15,Recycled Paper Products,Recycled Materials,182,1.9008846462020164
+2024-02-25,Biodegradable Packaging,Water Conservation,114,3.2465020248991325
+2024-01-17,Eco-Friendly Stationery,Energy Efficiency,52,3.722678034004371
+2024-02-07,Rainwater Harvesting Systems,Recycled Materials,191,1.726808003300902
+2024-01-24,Organic Food,Energy Efficiency,169,2.3609709568640818
+2024-03-09,Organic Personal Care Products,Energy Efficiency,117,1.048487420016264
+2024-04-07,Water-Efficient Toilets,Energy Efficiency,195,1.3151720729060614
+2024-03-10,Low-Flow Showerheads,Water Conservation,86,3.5650303428424226
+2024-03-26,LED Bulbs,Sustainable Packaging,122,1.3164725646303213
+2024-01-11,Energy-Efficient Appliances,Recycled Materials,192,2.8632352265017706
+2024-01-16,Organic Food,Organic Products,98,3.690708177750947
+2024-04-06,Eco-Friendly Stationery,Water Conservation,170,0.9809461539263473
+2024-03-13,Organic Cotton Clothing,Recycled Materials,137,3.052904988330066
+2024-02-28,Water-Efficient Toilets,Water Conservation,189,1.654532526656137
+2024-03-10,Organic Personal Care Products,Sustainable Packaging,86,4.8331709385691095
+2024-03-20,Eco-Friendly Stationery,Organic Products,110,2.6759554102396614
+2024-04-02,LED Bulbs,Recycled Materials,173,4.126966473988212
+2024-01-03,Water-Efficient Toilets,Organic Products,88,2.976019439703178
+2024-01-20,Rainwater Harvesting Systems,Energy Efficiency,112,0.6953563978466862
+2024-02-28,LED Bulbs,Sustainable Packaging,95,3.3491811901731006
+2024-02-05,Compostable Utensils,Sustainable Packaging,137,4.781315039929956
+2024-01-19,Reusable Bags,Sustainable Packaging,60,3.2072531906584905
+2024-03-30,Compostable Utensils,Energy Efficiency,111,4.186349867420556
+2024-03-07,Recycled Paper Products,Recycled Materials,126,4.4789290850678345
+2024-01-19,Eco-Friendly Stationery,Organic Products,101,1.5263589737701961
+2024-01-20,Organic Food,Recycled Materials,53,1.45420177958702
+2024-04-05,Organic Food,Organic Products,108,3.249414449829463
+2024-03-11,Organic Food,Sustainable Packaging,121,2.349628114130171
+2024-02-21,Organic Personal Care Products,Water Conservation,197,4.279375862900242
+2024-02-02,Reusable Bags,Organic Products,142,4.55010405529105
+2024-02-09,Compostable Utensils,Recycled Materials,112,2.0903962068622315
+2024-02-08,Reusable Bags,Water Conservation,103,1.5659175153851692
+2024-03-22,Recycled Plastic Furniture,Energy Efficiency,166,4.012364818597378
+2024-01-01,Eco-Friendly Stationery,Water Conservation,159,1.7366271599666123
+2024-01-11,Reusable Bags,Water Conservation,123,4.201764433311553
+2024-04-01,Biodegradable Packaging,Water Conservation,156,2.4068221414194326
+2024-02-26,Energy-Efficient Appliances,Water Conservation,106,3.5039745468116172
+2024-03-29,Energy-Efficient Appliances,Organic Products,52,0.9299089122560068
+2024-02-19,Biodegradable Packaging,Energy Efficiency,169,3.3073669610445786
+2024-01-23,Water-Efficient Toilets,Organic Products,55,2.532954554317531
+2024-01-31,Solar Panels,Sustainable Packaging,54,3.1397380842896334
+2024-04-03,Organic Personal Care Products,Energy Efficiency,54,1.2560639348518854
+2024-02-11,Water-Efficient Toilets,Water Conservation,103,3.8159318522488195
+2024-04-08,LED Bulbs,Organic Products,96,4.382586848944529
+2024-01-07,Organic Cotton Clothing,Organic Products,58,1.4753291004084903
+2024-01-16,Organic Personal Care Products,Energy Efficiency,148,0.9307154998407278
+2024-03-30,Organic Personal Care Products,Water Conservation,69,0.6063736372085138
+2024-02-29,LED Bulbs,Energy Efficiency,171,3.388871751994697
+2024-01-02,Reusable Bags,Energy Efficiency,110,3.2319231623995135
+2024-01-01,Compostable Utensils,Organic Products,172,2.960138357213315
+2024-02-17,Compostable Utensils,Water Conservation,131,1.5437619325218894
+2024-01-12,Energy-Efficient Appliances,Energy Efficiency,111,2.259076981574816
+2024-03-09,Low-Flow Showerheads,Organic Products,194,3.175143508337779
+2024-02-06,Water-Efficient Toilets,Sustainable Packaging,52,2.7354508648662623
+2024-02-01,Recycled Plastic Furniture,Water Conservation,62,4.945034840966993
+2024-01-09,Eco-Friendly Stationery,Water Conservation,169,1.113978886505299
+2024-04-08,Recycled Paper Products,Energy Efficiency,174,3.628150493214172
+2024-01-19,Rainwater Harvesting Systems,Water Conservation,138,2.3194344564693146
+2024-02-17,Compostable Utensils,Energy Efficiency,122,2.4268982671652664
+2024-03-20,Eco-Friendly Stationery,Sustainable Packaging,117,3.729189945461793
+2024-01-03,Rainwater Harvesting Systems,Sustainable Packaging,191,3.6159626809596634
+2024-01-20,Eco-Friendly Stationery,Energy Efficiency,150,4.960651971659847
+2024-01-24,Reusable Bags,Water Conservation,147,1.0777743025435635
+2024-02-23,Rainwater Harvesting Systems,Energy Efficiency,60,0.9684934222287485
+2024-02-02,Recycled Paper Products,Water Conservation,154,3.759524677079335
+2024-01-24,Eco-Friendly Stationery,Recycled Materials,116,3.1027411265288407
+2024-03-15,Biodegradable Packaging,Sustainable Packaging,172,1.7337229995191263
+2024-03-12,Recycled Paper Products,Organic Products,78,0.8573871604504397
+2024-02-05,Rainwater Harvesting Systems,Organic Products,186,0.8854621231839375
+2024-02-07,Recycled Paper Products,Organic Products,125,4.523858935988533
+2024-03-24,Eco-Friendly Stationery,Energy Efficiency,58,1.363402961234343
+2024-04-08,Solar Panels,Sustainable Packaging,89,1.9551720295198434
+2024-03-29,Eco-Friendly Stationery,Organic Products,74,1.519953810021446
+2024-04-08,Eco-Friendly Stationery,Water Conservation,54,2.097483376243718
+2024-01-25,Reusable Bags,Recycled Materials,188,0.8124072923574202
+2024-04-02,Water-Efficient Toilets,Sustainable Packaging,173,2.835769059087217
+2024-01-18,Biodegradable Packaging,Organic Products,87,0.8042565361649671
+2024-03-22,Recycled Plastic Furniture,Sustainable Packaging,121,4.101604285200628
+2024-03-06,Compostable Utensils,Water Conservation,182,1.5517043685969485
+2024-02-23,Organic Personal Care Products,Energy Efficiency,139,2.930053615720298
+2024-02-04,LED Bulbs,Organic Products,195,4.460355894026562
+2024-03-20,Water-Efficient Toilets,Sustainable Packaging,86,3.4289481607123737
+2024-03-01,LED Bulbs,Recycled Materials,109,2.898310039481009
+2024-02-10,Reusable Bags,Water Conservation,77,1.9595018890191902
+2024-04-09,Biodegradable Packaging,Energy Efficiency,130,1.9985086087618906
+2024-02-02,Organic Food,Organic Products,163,3.5126912983918555
+2024-03-08,Eco-Friendly Stationery,Sustainable Packaging,89,4.973627125495254
+2024-02-02,Organic Food,Sustainable Packaging,94,3.4782763543222037
+2024-01-14,Organic Food,Energy Efficiency,111,3.0100253781651123
+2024-01-21,Organic Cotton Clothing,Recycled Materials,142,3.7879272960766075
+2024-02-17,Energy-Efficient Appliances,Sustainable Packaging,164,2.5934252552767316
+2024-01-20,Organic Food,Recycled Materials,116,0.7706405417035335
+2024-01-08,Compostable Utensils,Recycled Materials,105,3.0303356714505942
+2024-01-07,Solar Panels,Energy Efficiency,89,4.809313780274211
+2024-03-07,Energy-Efficient Appliances,Sustainable Packaging,147,1.2888632406094684
+2024-01-17,Reusable Bags,Sustainable Packaging,89,3.6050220086929956
+2024-02-02,Organic Personal Care Products,Organic Products,140,1.4042015989657541
+2024-02-17,Water-Efficient Toilets,Organic Products,82,2.9112245801288656
+2024-03-16,Solar Panels,Organic Products,55,0.9350440234102383
+2024-02-28,Recycled Paper Products,Sustainable Packaging,196,2.526669213161833
+2024-03-26,Rainwater Harvesting Systems,Organic Products,129,3.9027349800286073
+2024-01-22,Organic Cotton Clothing,Water Conservation,141,2.0640718590754195
+2024-01-30,Solar Panels,Sustainable Packaging,146,3.492102760192481
+2024-02-07,Recycled Plastic Furniture,Water Conservation,108,4.079524823553781
+2024-02-20,Organic Food,Organic Products,108,4.672300187657537
+2024-02-23,Reusable Bags,Organic Products,97,1.555889368349541
+2024-01-08,Low-Flow Showerheads,Water Conservation,62,2.2969216211418866
+2024-01-27,Rainwater Harvesting Systems,Sustainable Packaging,156,1.1858720599868784
+2024-01-27,LED Bulbs,Organic Products,94,4.966175759712688
+2024-04-07,Compostable Utensils,Organic Products,138,4.671504355659329
+2024-01-21,LED Bulbs,Sustainable Packaging,149,2.9298070862625183
+2024-01-30,Solar Panels,Recycled Materials,56,4.2891498246938955
+2024-04-06,Organic Personal Care Products,Organic Products,182,2.8443108977241898
+2024-01-28,LED Bulbs,Energy Efficiency,94,3.306135596012419
+2024-03-04,Recycled Plastic Furniture,Recycled Materials,107,0.9010599445220748
+2024-04-06,Reusable Bags,Organic Products,80,3.898716892235636
+2024-03-09,Recycled Paper Products,Energy Efficiency,72,1.0747106763585568
+2024-03-01,Organic Personal Care Products,Energy Efficiency,187,4.217304336136378
+2024-02-17,Water-Efficient Toilets,Sustainable Packaging,156,4.019126394516737
+2024-01-19,Compostable Utensils,Sustainable Packaging,88,3.689351139843394
+2024-01-04,Recycled Plastic Furniture,Recycled Materials,131,0.6627217123614295
+2024-02-04,Recycled Plastic Furniture,Recycled Materials,149,1.8640776017539786
+2024-03-04,LED Bulbs,Recycled Materials,51,1.684006564598793
+2024-02-18,Organic Food,Sustainable Packaging,126,2.120613833621836
+2024-01-17,LED Bulbs,Sustainable Packaging,61,0.8943923604372734
+2024-02-13,Solar Panels,Recycled Materials,88,4.716310203639782
+2024-04-01,Water-Efficient Toilets,Organic Products,62,2.9921100832056933
+2024-01-30,Energy-Efficient Appliances,Recycled Materials,95,1.874859397961106
+2024-04-02,Organic Personal Care Products,Water Conservation,162,2.2864168268342753
+2024-02-15,LED Bulbs,Sustainable Packaging,66,2.5124114322717603
+2024-01-06,Reusable Bags,Sustainable Packaging,153,3.202674500122778
+2024-04-08,Low-Flow Showerheads,Water Conservation,147,2.8205574246342398
+2024-02-06,Compostable Utensils,Water Conservation,137,4.637263879464878
+2024-01-24,Eco-Friendly Stationery,Organic Products,158,2.736335673076236
+2024-04-02,LED Bulbs,Recycled Materials,119,4.964711066704907
+2024-02-15,Reusable Bags,Organic Products,123,4.331412309852931
+2024-02-22,Organic Personal Care Products,Recycled Materials,112,1.4382973146080111
+2024-04-04,Reusable Bags,Recycled Materials,109,4.687678465897623
+2024-04-08,Compostable Utensils,Recycled Materials,128,1.0236487904846423
+2024-02-29,Energy-Efficient Appliances,Organic Products,86,4.178523688210362
+2024-04-06,Reusable Bags,Water Conservation,71,2.2128048206446103
+2024-03-03,Low-Flow Showerheads,Organic Products,197,4.450884442002813
+2024-03-25,Reusable Bags,Energy Efficiency,145,4.406255105483527
+2024-02-01,Reusable Bags,Water Conservation,117,4.126664300529296
+2024-03-27,Reusable Bags,Energy Efficiency,66,4.055136963381776
+2024-02-02,Recycled Paper Products,Organic Products,61,1.8710561259411835
+2024-03-07,Recycled Paper Products,Water Conservation,199,0.8641367737306348
+2024-01-18,Energy-Efficient Appliances,Recycled Materials,194,2.3134108044432264
+2024-01-25,LED Bulbs,Recycled Materials,187,1.280860317439289
+2024-04-04,Reusable Bags,Recycled Materials,167,3.627279900061078
+2024-02-23,Organic Cotton Clothing,Recycled Materials,71,2.057448769420035
+2024-02-27,Water-Efficient Toilets,Sustainable Packaging,169,4.890245903869617
+2024-03-07,Organic Cotton Clothing,Sustainable Packaging,99,3.384374348053994
+2024-02-15,LED Bulbs,Sustainable Packaging,63,4.201162536354625
+2024-01-24,Energy-Efficient Appliances,Water Conservation,78,1.096361027338318
+2024-02-01,Organic Food,Sustainable Packaging,174,4.379065170226801
+2024-02-16,Organic Food,Water Conservation,56,4.652407357310275
+2024-03-26,Biodegradable Packaging,Organic Products,78,2.6917786346852117
+2024-01-23,Organic Cotton Clothing,Recycled Materials,188,3.2281382198793986
+2024-03-06,LED Bulbs,Energy Efficiency,82,3.9416441040634793
+2024-01-27,LED Bulbs,Recycled Materials,183,1.2867738226718566
+2024-01-02,Rainwater Harvesting Systems,Organic Products,160,2.761547344085491
+2024-03-30,Solar Panels,Recycled Materials,128,2.293983624975409
+2024-01-17,Eco-Friendly Stationery,Water Conservation,107,1.158682964730121
+2024-02-02,Organic Personal Care Products,Sustainable Packaging,75,2.1539049003118915
+2024-01-09,Rainwater Harvesting Systems,Energy Efficiency,78,0.8067753922347211
+2024-02-12,Low-Flow Showerheads,Organic Products,53,0.6161535812726915
+2024-02-17,Recycled Paper Products,Organic Products,148,1.1082483011967024
+2024-02-08,Recycled Paper Products,Water Conservation,190,4.834018002151282
+2024-04-02,Solar Panels,Water Conservation,88,2.9728829115275763
+2024-02-11,Compostable Utensils,Sustainable Packaging,64,4.84619972518949
+2024-01-26,Compostable Utensils,Recycled Materials,168,2.446240452485594
+2024-04-08,Energy-Efficient Appliances,Water Conservation,78,1.903172598883668
+2024-02-19,Recycled Plastic Furniture,Energy Efficiency,124,2.7776383827810984
+2024-01-25,Solar Panels,Organic Products,165,2.4778025988480956
+2024-01-24,Eco-Friendly Stationery,Sustainable Packaging,81,0.9754910791778476
+2024-01-13,LED Bulbs,Sustainable Packaging,179,3.383718416105928
+2024-02-29,Compostable Utensils,Recycled Materials,133,1.4721718212931982
+2024-01-07,Eco-Friendly Stationery,Organic Products,71,3.288145797040233
+2024-02-26,Reusable Bags,Sustainable Packaging,76,3.42590491579169
+2024-02-05,Organic Cotton Clothing,Sustainable Packaging,130,1.1841118390789165
+2024-02-14,Organic Cotton Clothing,Water Conservation,175,0.7760733219980067
+2024-01-20,Recycled Plastic Furniture,Water Conservation,141,4.013427137307979
+2024-03-05,Water-Efficient Toilets,Energy Efficiency,70,2.569101906961941
+2024-01-08,LED Bulbs,Organic Products,96,0.761737079774641
+2024-01-16,Organic Personal Care Products,Sustainable Packaging,150,4.9768984272639525
+2024-01-14,Organic Personal Care Products,Water Conservation,133,0.7600125244836499
+2024-03-16,Low-Flow Showerheads,Energy Efficiency,55,3.6276585298634894
+2024-03-27,Organic Personal Care Products,Water Conservation,196,4.926555163685361
+2024-01-15,Reusable Bags,Organic Products,180,1.5763104689716654
+2024-04-01,Reusable Bags,Sustainable Packaging,50,1.1401221590923827
+2024-04-07,Organic Cotton Clothing,Organic Products,107,1.04623222740093
+2024-03-06,Solar Panels,Water Conservation,173,1.86473816405418
+2024-02-01,Recycled Plastic Furniture,Sustainable Packaging,64,0.9547061495479101
+2024-03-27,Energy-Efficient Appliances,Water Conservation,113,3.6147260376235937
+2024-03-03,Low-Flow Showerheads,Recycled Materials,74,0.7803130915852821
+2024-03-26,Compostable Utensils,Sustainable Packaging,73,2.792399576674054
+2024-02-20,Eco-Friendly Stationery,Water Conservation,61,4.985135842338396
+2024-01-25,Solar Panels,Sustainable Packaging,67,4.162866212777084
+2024-02-27,Compostable Utensils,Recycled Materials,64,3.268487472039549
+2024-03-03,Solar Panels,Water Conservation,76,1.8781412935397526
+2024-03-02,Solar Panels,Energy Efficiency,121,3.3075312633123732
+2024-01-22,Solar Panels,Organic Products,109,2.8716865876024324
+2024-02-27,Organic Cotton Clothing,Sustainable Packaging,194,2.4173752275066716
+2024-02-27,Organic Personal Care Products,Water Conservation,142,1.0881966953308977
+2024-03-26,Recycled Plastic Furniture,Recycled Materials,102,4.4897189685821
+2024-02-18,Energy-Efficient Appliances,Recycled Materials,57,2.524030919695951
+2024-02-21,Organic Personal Care Products,Sustainable Packaging,128,1.3758013031934428
+2024-02-11,Solar Panels,Energy Efficiency,76,2.154917078947803
+2024-03-10,Biodegradable Packaging,Water Conservation,99,2.3635838863801717
+2024-01-15,Water-Efficient Toilets,Energy Efficiency,180,4.223920530050934
+2024-02-23,Compostable Utensils,Recycled Materials,142,3.8012647125263093
+2024-02-29,LED Bulbs,Energy Efficiency,73,3.961872021386029
+2024-04-06,Rainwater Harvesting Systems,Recycled Materials,109,0.5496406899289125
+2024-01-08,Organic Personal Care Products,Energy Efficiency,171,2.372692991808927
+2024-02-22,Eco-Friendly Stationery,Recycled Materials,180,2.6660486823589564
+2024-02-29,Organic Cotton Clothing,Recycled Materials,197,0.5863652457037551
+2024-01-05,Low-Flow Showerheads,Recycled Materials,95,1.6691594393526539
+2024-03-08,Recycled Paper Products,Recycled Materials,64,3.9213042040496076
+2024-01-06,Energy-Efficient Appliances,Energy Efficiency,66,1.1169936757804957
+2024-04-05,LED Bulbs,Sustainable Packaging,175,2.9088955915366626
+2024-04-03,Reusable Bags,Water Conservation,133,1.4684084240775688
+2024-02-16,Organic Food,Water Conservation,58,0.5545434858975198
+2024-04-08,Biodegradable Packaging,Water Conservation,112,1.5854065591979367
+2024-02-24,Recycled Paper Products,Sustainable Packaging,166,4.891431897095242
+2024-02-09,Rainwater Harvesting Systems,Sustainable Packaging,179,4.106917003473454
+2024-02-21,LED Bulbs,Sustainable Packaging,137,4.818094899444651
+2024-01-16,Recycled Paper Products,Water Conservation,121,2.695343197668631
+2024-01-13,LED Bulbs,Energy Efficiency,188,0.9938128940487658
+2024-01-30,Eco-Friendly Stationery,Energy Efficiency,113,2.9658177003816184
+2024-01-19,Biodegradable Packaging,Organic Products,121,2.544698005519824
+2024-01-17,Rainwater Harvesting Systems,Organic Products,70,4.299606872328272
+2024-03-03,Reusable Bags,Recycled Materials,67,0.9413716135291006
+2024-01-19,Solar Panels,Sustainable Packaging,113,2.697085116598002
+2024-04-01,Compostable Utensils,Recycled Materials,131,1.1752189911229292
+2024-02-27,Reusable Bags,Recycled Materials,159,1.9610416710052698
+2024-02-24,Solar Panels,Energy Efficiency,144,3.8181068482450984
+2024-03-30,Organic Food,Sustainable Packaging,81,2.642081582159449
+2024-03-30,Organic Cotton Clothing,Energy Efficiency,60,2.191497283155962
+2024-03-02,Recycled Plastic Furniture,Water Conservation,94,2.275143253565159
+2024-01-23,Recycled Plastic Furniture,Energy Efficiency,82,2.56751045782694
+2024-01-09,Recycled Plastic Furniture,Sustainable Packaging,151,4.0325744472667555
+2024-01-12,Energy-Efficient Appliances,Water Conservation,185,4.514381100231055
+2024-01-01,Organic Personal Care Products,Energy Efficiency,60,4.799006089267677
+2024-02-27,Water-Efficient Toilets,Sustainable Packaging,137,4.041065238148828
+2024-01-01,Low-Flow Showerheads,Sustainable Packaging,90,1.9193310308660574
+2024-02-03,Low-Flow Showerheads,Sustainable Packaging,194,3.5966061773894396
+2024-04-05,Organic Personal Care Products,Recycled Materials,125,2.4692140582492637
+2024-02-17,Recycled Plastic Furniture,Organic Products,170,1.6460177992072302
+2024-03-29,Compostable Utensils,Organic Products,95,4.283922107416652
+2024-01-01,Rainwater Harvesting Systems,Water Conservation,129,0.6729185703304625
+2024-01-16,Biodegradable Packaging,Energy Efficiency,103,4.557928964609406
+2024-03-01,Rainwater Harvesting Systems,Water Conservation,135,2.5766485908113035
+2024-03-04,Biodegradable Packaging,Energy Efficiency,141,3.3674066456372618
+2024-03-03,Rainwater Harvesting Systems,Organic Products,197,3.4670926499260224
+2024-03-09,Water-Efficient Toilets,Organic Products,146,4.5280298331794135
+2024-01-22,Energy-Efficient Appliances,Water Conservation,51,3.365013569752433
+2024-04-02,Energy-Efficient Appliances,Energy Efficiency,82,3.262701131420278
+2024-03-07,Recycled Plastic Furniture,Recycled Materials,126,0.7999341825231048

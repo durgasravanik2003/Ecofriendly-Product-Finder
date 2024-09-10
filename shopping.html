@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("bg4.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav {
+            background-image: url("bg4.jpg");
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: rgb(0, 0, 0);
+            margin-bottom: 0px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav h1 {
+            margin-left: 20px;
+            font-size: 35px;;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            color: black;
+            text-decoration: underline;
+            font-size: 20px;;
+            margin: 0 10px;
+        }
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-image: url('icon.jpg');
+            background-size: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 35%;
+            height: 250px;
+            border-radius: 25px;
+        }
+        .categories {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-image:url("bg4.jpg");
+            background-size: cover;
+        }
+        .bus {
+            width: 20%;
+            margin-bottom: 30px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            background-color: #ffffff;
+            padding: 10px;
+            border: 4px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            background-image: url("bg1.jpg");
+        }
+        .bus img {
+            width: 80%;
+            height: 250px;
+            border-radius: 10px;
+        }      
+        .bus-name {
+            margin-top: 10px;
+            font-size: 40px;
+            font-style: italic;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            border: 2px solid black;
+            background-image: url(bg1.jpg);
+            align-content: center;
+        }
+        .dept {
+            flex: 1; 
+            text-align: left;
+            color: #000000;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .duration {
+            flex: 1;
+            color: #000000;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .arrival {
+            flex: 1;
+            text-align: right;
+            color: #000000;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .fare {
+            color: #000000;
+            background-image: url(bg1.jpg);
+            font-size: 20px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Ecofriendly products</h1>
+        <div class="nav-links">
+            <a href="logout.php"><b>Logout</b></a>
+            <div class="logo"></div>
+        </div>
+    </nav>
+    <div class="categories">
+        <div class="bus">
+            <img src="pic1.jpg" alt="Water bottle">
+            <div class="bus-name"><a href="https://pexpo.in/collections/stainless-steel-water-bottles">Water bottle</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic2.jpg" alt="Carry Bags">
+            <div class="bus-name"><a href="https://www.amazon.in/gp/aw/d/B07HMWSG3Z">Carry Bags</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic3.jpg" alt="Shampoo bars">
+            <div class="bus-name"><a href="https://www.amazon.in/GOLI-SODA-Natural-Probiotics-Shampoo/dp/B07RTH3ND7">Shampoo bars</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic4.jpg" alt="Solar-Powered Phone Charger">
+            <div class="bus-name"><a href="https://www.amazon.in/Ambrane-Emergency-Magnetic-Wireless-Compatible/dp/B0CPSZLDFW">Solar-Powered Phone Charger</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic5.jpg" alt="Sustainable pots">
+            <div class="bus-name"><a href="https://www.amazon.in/Swadeshi-Blessings-Exclusive-Unglazed-Polished/dp/B09WMQGP5H">Sustainable pots</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic6.jpg" alt="Beeswax Food Wraps">
+            <div class="bus-name"><a href="https://www.amazon.in/ALOUD-CREATIONS-Compostable-Wrapping-30/dp/B0C5N722GY">Beeswax Food Wraps</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic8.jpg" alt="Trash bags">
+            <div class="bus-name"><a href="https://www.amazon.in/Amazon-Brand-Presto-Oxo-Biodegradable-Garbage/dp/B0821PN8L4">Trash bags</a></div>
+        </div>
+        <div class="bus">
+            <img src="pic7.jpg" alt="Paper roll">
+            <div class="bus-name"><a href="https://www.amazon.in/Smart-Living-Packing-Recycled-Material/dp/B08H1BTW8R">Paper roll</a></div>
+        </div>
+    </div>
+</body>
+</html>

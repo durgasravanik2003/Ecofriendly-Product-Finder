@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAdvisor Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .chat-container {
+            width: 400px;
+            max-width: 100%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background-color: #3ca141;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .chat-box {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+            background-color: #e5e5e5;
+        }
+
+        .chat-message {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .user-message {
+            background-color: #d1ffd6;
+            align-self: flex-end;
+        }
+
+        .bot-message {
+            background-color: #fff;
+            align-self: flex-start;
+        }
+
+        .chat-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+
+        .chat-input input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            outline: none;
+        }
+
+        .chat-input button {
+            padding: 1rem;
+            background-color: #3ca141;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .chat-input button:hover {
+            background-color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>EcoAdvisor Chat</h1>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        function sendMessage() {
+            const userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === "") return;
+
+            // Add user's message to the chat
+            addMessageToChat(userInput, 'user-message');
+
+            // Get bot response
+            const botResponse = getBotResponse(userInput);
+
+            // Add bot's response to the chat
+            setTimeout(() => {
+                addMessageToChat(botResponse, 'bot-message');
+            }, 500); // Simulate a delay for the bot's response
+
+            // Clear the input field
+            document.getElementById('user-input').value = "";
+        }
+
+        function addMessageToChat(message, className) {
+            const chatBox = document.getElementById('chat-box');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('chat-message', className);
+            messageDiv.textContent = message;
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+        }
+
+        function normalizeInput(input) {
+            // Convert to lowercase, remove extra spaces and punctuation
+            return input.toLowerCase()
+                .replace(/[^\w\s]/g, '') // Remove punctuation
+                .trim(); // Remove leading and trailing spaces
+        }
+
+        function getBotResponse(userInput) {
+            const responses = {
+                "what is the carbon footprint": "A carbon footprint is the total amount of greenhouse gases, primarily carbon dioxide, released into the atmosphere due to human activities. It can be reduced by using renewable energy, driving less, and conserving energy at home.",
+                "how can we conserve water at home": "To conserve water at home, fix leaks, install water-efficient fixtures, take shorter showers, and only run dishwashers or washing machines with full loads.",
+                "how can i create a sustainable garden": "You can create a sustainable garden by planting native species, using compost, collecting rainwater, and reducing the use of pesticides and fertilizers.",
+                "what are the benefits of using solar energy": "Solar energy is renewable, reduces electricity bills, decreases greenhouse gas emissions, and has low maintenance costs.",
+                "what is the difference between renewable and non-renewable energy": "Renewable energy comes from natural sources that are replenished, such as wind and solar power. Non-renewable energy comes from finite resources like coal and oil.",
+                "how does deforestation affect the environment": "Deforestation leads to loss of biodiversity, disruption of water cycles, increased greenhouse gases, and contributes to climate change.",
+                "what are some ways to reduce energy consumption": "You can reduce energy consumption by using energy-efficient appliances, switching to LED bulbs, unplugging devices when not in use, and using smart thermostats.",
+                "what are sustainable building materials": "Sustainable building materials include bamboo, recycled metal, reclaimed wood, and sustainable concrete, which have a lower environmental impact.",
+                "how can i reduce my use of plastic": "To reduce plastic use, switch to reusable bags, avoid single-use plastics, buy products with minimal packaging, and support recycling programs.",
+                "what are some eco-friendly transportation options": "Eco-friendly transportation includes walking, biking, using public transportation, carpooling, and driving electric or hybrid vehicles.",
+                "how does recycling help the environment": "Recycling helps reduce landfill waste, conserves natural resources, saves energy, and reduces pollution.",
+                "what are the benefits of composting": "Composting reduces landfill waste, enriches soil, retains moisture, and helps reduce methane emissions from landfills.",
+                "what is a zero-waste lifestyle": "A zero-waste lifestyle aims to reduce the amount of waste you generate by reusing, recycling, and composting as much as possible.",
+                "how does fast fashion impact the environment": "Fast fashion leads to overproduction, textile waste, and pollution from toxic dyes. It also encourages a throwaway culture.",
+                "what are alternatives to single-use plastic": "Alternatives include reusable glass or metal containers, cloth bags, bamboo cutlery, and biodegradable packaging.",
+                "how can businesses become more eco-friendly": "Businesses can adopt sustainable practices by reducing waste, conserving energy, using eco-friendly materials, and promoting recycling.",
+                "what are the benefits of buying local products": "Buying local reduces carbon emissions from transportation, supports local economies, and ensures fresher products.",
+                "what is sustainable agriculture": "Sustainable agriculture focuses on using farming techniques that protect the environment, conserve resources, and ensure food security.",
+                "what can individuals do to combat climate change": "Individuals can reduce energy use, switch to renewable energy, use eco-friendly transportation, reduce meat consumption, and support sustainable products.",
+                "how can we reduce food waste": "Plan meals, store food properly, compost, freeze leftovers, and be mindful of portion sizes to reduce food waste.",
+                "how do fossil fuels contribute to climate change": "Burning fossil fuels releases carbon dioxide and other greenhouse gases into the atmosphere, contributing to global warming and climate change.",
+                "what are green buildings": "Green buildings are designed to reduce environmental impact by using energy-efficient systems, sustainable materials, and renewable energy sources.",
+                "what is the circular economy": "A circular economy is an economic model that aims to minimize waste and make the most of resources by reusing, recycling, and regenerating products and materials.",
+                "how does pollution affect wildlife": "Pollution can destroy habitats, poison animals, and disrupt ecosystems, leading to loss of biodiversity and species extinction.",
+                "what are some eco-friendly cleaning products": "Eco-friendly cleaning products are made from natural ingredients like vinegar, baking soda, and essential oils that are safe for the environment and human health.",
+                "how can i reduce my carbon footprint when traveling": "You can reduce your travel carbon footprint by using public transportation, carpooling, flying less, and choosing eco-friendly accommodations.",
+                "what is biodiversity": "Biodiversity refers to the variety of life on Earth, including species diversity, genetic diversity, and ecosystem diversity. It is essential for ecosystem health and resilience.",
+                "how does meat consumption impact the environment": "Meat production requires large amounts of land, water, and energy, and contributes to deforestation, habitat loss, and greenhouse gas emissions.",
+                "how can i support sustainable fashion": "Support sustainable fashion by buying from ethical brands, choosing second-hand clothes, and opting for natural, organic, and biodegradable fabrics.",
+                "what is upcycling": "Upcycling is the process of creatively reusing old or discarded materials to create new, higher-value products, reducing waste and environmental impact.",
+                "what are eco-friendly packaging options": "Eco-friendly packaging includes materials like recycled paper, biodegradable plastics, reusable containers, and plant-based materials like cornstarch packaging.",
+                "what are the benefits of sustainable fisheries": "Sustainable fisheries help maintain fish populations, protect marine ecosystems, and ensure that fishing practices do not harm the environment.",
+                "how does overfishing affect the ocean": "Overfishing depletes fish stocks, disrupts marine ecosystems, and threatens species that rely on fish for food, leading to ecological imbalances.",
+                "what are the benefits of eating a plant-based diet": "A plant-based diet can reduce greenhouse gas emissions, conserve water, reduce deforestation, and promote better health.",
+                "how does climate change affect the water cycle": "Climate change disrupts the water cycle by increasing evaporation, altering precipitation patterns, and causing more frequent and intense droughts and floods.",
+                "how can i reduce my energy use at home": "Turn off lights and electronics when not in use, use energy-efficient appliances, install insulation, and switch to renewable energy sources.",
+                "what are some ways to conserve water in agriculture": "Conserve water in agriculture by using drip irrigation, collecting rainwater, practicing crop rotation, and planting drought-resistant crops.",
+                "how can we protect endangered species": "Protect endangered species by supporting conservation programs, reducing habitat destruction, combating poaching, and promoting biodiversity.",
+                "what are the effects of plastic pollution on marine life": "Plastic pollution harms marine life through ingestion and entanglement, leading to injury, starvation, and death for many marine species.",
+                "how does urbanization impact the environment": "Urbanization can lead to habitat destruction, pollution, increased carbon emissions, and loss of green spaces, affecting biodiversity and climate.",
+                "what are the benefits of electric vehicles": "Electric vehicles produce zero emissions, reduce dependence on fossil fuels, and have lower operating costs compared to gasoline-powered vehicles.",
+                "what is permaculture": "Permaculture is a design system for sustainable agriculture that mimics natural ecosystems and promotes self-sufficiency by using renewable resources.",
+                "how does air pollution affect human health": "Air pollution can cause respiratory problems, cardiovascular diseases, and exacerbate conditions like asthma and bronchitis.",
+                "what are the benefits of using public transportation": "Public transportation reduces carbon emissions, decreases traffic congestion, saves energy, and is cost-effective for commuters.",
+                "how does deforestation affect climate change": "Deforestation reduces the number of trees that absorb carbon dioxide, increasing greenhouse gases in the atmosphere and accelerating climate change.",
+                "what is regenerative agriculture": "Regenerative agriculture focuses on improving soil health, increasing biodiversity, and sequestering carbon to restore ecosystems and combat climate change.",
+                "how can i reduce my environmental impact": "Reduce your impact by conserving energy, reducing waste, using sustainable products, recycling, and supporting eco-friendly companies.",
+                "how does global warming affect weather patterns": "Global warming intensifies weather patterns, causing more frequent and severe heatwaves, storms, droughts, and floods.",
+                "what are the benefits of eating organic food": "Organic food is grown without synthetic pesticides or fertilizers, promotes biodiversity, and is better for the environment and human health.",
+                "how can i conserve water in my garden": "Use mulch to retain soil moisture, plant drought-resistant species, and install a rain barrel to collect and reuse water.",
+                "what are some eco-friendly alternatives to bottled water": "Use reusable water bottles made of stainless steel or glass, install a water filter at home, and avoid buying single-use plastic bottles.",
+                "how can i reduce my reliance on fossil fuels": "Switch to renewable energy sources, use energy-efficient appliances, and opt for public transportation, cycling, or electric vehicles.",
+                "what are the benefits of LED lighting": "LED lighting is energy-efficient, lasts longer than traditional bulbs, and reduces electricity consumption and carbon emissions.",
+                "how can cities become more sustainable": "Cities can promote sustainability by investing in public transportation, green buildings, renewable energy, and urban green spaces.",
+                "what is the impact of palm oil production on rainforests": "Palm oil production leads to deforestation, habitat destruction, and loss of biodiversity in tropical rainforests, especially in Southeast Asia.",
+                "what are the environmental impacts of industrial agriculture": "Industrial agriculture contributes to soil degradation, water pollution, deforestation, and greenhouse gas emissions.",
+                "what are some ways to reduce indoor air pollution": "Improve ventilation, avoid using toxic cleaning products, use air purifiers, and add indoor plants to improve air quality.",
+                "how can i live a zero-waste lifestyle": "Live a zero-waste lifestyle by using reusable products, recycling, composting, and reducing your consumption of single-use items.",
+                "what are the benefits of community gardens": "Community gardens provide access to fresh produce, promote biodiversity, foster social connections, and support sustainable food practices.",
+                "how does water scarcity affect global populations": "Water scarcity affects agriculture, sanitation, and health, leading to food insecurity, disease outbreaks, and conflicts over water resources.",
+                "what are some eco-friendly alternatives to plastic straws": "Alternatives to plastic straws include reusable metal, glass, or bamboo straws, as well as paper or plant-based biodegradable options.",
+                "what are the benefits of carpooling": "Carpooling reduces carbon emissions, saves money on fuel, decreases traffic congestion, and promotes a more sustainable way to commute.",
+                "what is the role of coral reefs in marine ecosystems": "Coral reefs provide habitat for marine life, protect coastlines from erosion, and support biodiversity and fishing industries.",
+                "how can we protect the ozone layer": "We can protect the ozone layer by reducing the use of ozone-depleting chemicals, like chlorofluorocarbons (CFCs), and supporting global regulations like the Montreal Protocol.",
+                "what is sustainable seafood and why is it important": "Sustainable seafood is harvested in ways that do not harm fish populations or marine ecosystems. It's important for maintaining healthy oceans and supporting future food security.",
+                "how does climate change affect the Arctic": "Climate change is causing Arctic ice to melt, leading to rising sea levels, habitat loss for species like polar bears, and disruptions in global climate patterns.",
+                "what are the benefits of rainwater harvesting": "Rainwater harvesting reduces demand on local water sources, lowers water bills, conserves resources, and helps mitigate flooding during heavy rainfall.",
+                "how can i reduce my energy consumption in winter": "In winter, reduce energy consumption by sealing drafts, using programmable thermostats, wearing warm clothing, and maintaining efficient heating systems.",
+                "what are some ways to reduce electronic waste": "Reduce e-waste by recycling old electronics, donating devices, repairing instead of replacing, and buying energy-efficient products.",
+                "what are the environmental impacts of aviation": "Aviation contributes to greenhouse gas emissions, noise pollution, and air pollution, with long-haul flights having the largest environmental impact.",
+                "what is the role of governments in combating climate change": "Governments can combat climate change by setting emissions targets, supporting renewable energy, regulating polluting industries, and promoting climate adaptation strategies."
+
+            };
+
+            // Keywords dictionary to match partial questions
+            const keywords = {
+                "plastic": "Reducing plastic use can be achieved by opting for reusable items like bags, bottles, and avoiding single-use plastics.",
+                "carbon footprint": "A carbon footprint measures the total greenhouse gases emitted due to human activities. Reducing energy consumption and using renewable resources can help.",
+                "renewable energy": "Renewable energy comes from natural sources like wind, solar, and hydropower. It is more sustainable compared to fossil fuels.",
+                // Add more keywords and responses
+    "hi": "Hello! How can I assist you with sustainable living today?",
+    "hello": "Hi there! What sustainable living tips do you need?",
+    "bye": "Goodbye! Have a great day and stay eco-friendly!",
+    "how are you": "I'm just a bot, but I'm here to help you with sustainable living tips!",
+    "how can we reduce plastic": "Here are some ways to reduce plastic: use reusable bags, bottles, and containers, avoid single-use plastics, recycle properly, and support bans on plastic products.",
+    "what are eco-friendly products": "Eco-friendly products include reusable shopping bags, stainless steel water bottles, bamboo toothbrushes, and biodegradable cleaning supplies.",
+    "carbon footprint": "A carbon footprint is the total amount of greenhouse gases, primarily carbon dioxide, released into the atmosphere due to human activities.",
+    "sustainable garden": "You can create a sustainable garden by planting native species, using compost, collecting rainwater, and reducing the use of pesticides.",
+    "renewable energy": "Renewable energy comes from natural sources that are replenished, such as wind, solar, and hydropower.",
+    "composting": "Composting helps enrich the soil, retain moisture, and reduce the need for chemical fertilizers.",
+    "water conservation": "To conserve water, fix leaks, install water-efficient fixtures, and avoid wasting water in daily tasks like showering.",
+    "energy efficiency": "Use energy-efficient appliances, switch to LED lights, and unplug devices when not in use to save energy.",
+    "recycling": "Recycling helps reduce waste in landfills, conserves natural resources, and saves energy.",
+    "deforestation": "Deforestation contributes to habitat loss, biodiversity decline, and increases carbon dioxide in the atmosphere.",
+    "organic farming": "Organic farming uses natural techniques to grow crops without synthetic fertilizers or pesticides.",
+    "zero waste": "A zero-waste lifestyle aims to reduce waste by reusing, recycling, and composting as much as possible.",
+    "fast fashion": "Fast fashion leads to waste and pollution due to the rapid production of low-quality clothing.",
+    "electric vehicles": "Electric vehicles reduce emissions, decrease air pollution, and rely on renewable energy sources.",
+    "carbon emissions": "Carbon emissions contribute to climate change and can be reduced through renewable energy and sustainable practices.",
+    "green buildings": "Green buildings are designed to reduce energy consumption, use sustainable materials, and promote environmental health.",
+    "sustainable seafood": "Sustainable seafood is caught or farmed in ways that ensure the long-term health of the ecosystem.",
+    "solar panels": "Solar panels generate renewable energy by converting sunlight into electricity, reducing your carbon footprint.",
+    "climate change": "Climate change refers to the long-term alteration of temperature and typical weather patterns in a place.",
+    "upcycling": "Upcycling is reusing discarded materials in a way that increases their value, reducing waste.",
+    "plastic pollution": "Plastic pollution harms wildlife, ecosystems, and contributes to land and ocean contamination.",
+    "rainwater harvesting": "Rainwater harvesting helps conserve water by collecting and storing rainwater for future use.",
+    "biodegradable products": "Biodegradable products break down naturally without harming the environment.",
+    "eco-friendly packaging": "Eco-friendly packaging includes materials like recycled paper, biodegradable plastics, and reusable containers.",
+    "permaculture": "Permaculture is a design system for sustainable agriculture that mimics natural ecosystems.",
+    "sustainable agriculture": "Sustainable agriculture focuses on environmentally friendly farming methods that conserve resources.",
+    "pesticide-free farming": "Pesticide-free farming avoids harmful chemicals, promoting healthy soil and biodiversity.",
+    "carbon neutral": "Being carbon neutral means balancing carbon emissions with carbon removal or offsetting efforts.",
+    "circular economy": "A circular economy aims to minimize waste by reusing, recycling, and regenerating products and materials.",
+    "biodiversity": "Biodiversity refers to the variety of life on Earth, which is essential for ecosystem health.",
+    "reforestation": "Reforestation is the process of planting trees in deforested areas to restore ecosystems.",
+    "eco-tourism": "Eco-tourism promotes responsible travel to natural areas that conserve the environment.",
+    "food waste": "Food waste contributes to landfill pollution. To reduce it, plan meals and compost leftovers.",
+    "environmental footprint": "An environmental footprint measures the impact human activities have on the environment.",
+    "green energy": "Green energy comes from renewable sources like wind, solar, and hydro, which have low environmental impact.",
+    "LED lighting": "LED lighting is energy-efficient, long-lasting, and reduces electricity consumption.",
+    "sustainable transportation": "Sustainable transportation options include biking, walking, using public transit, and electric vehicles.",
+    "wildlife conservation": "Wildlife conservation helps protect endangered species and preserve biodiversity.",
+    "ocean acidification": "Ocean acidification occurs when excess carbon dioxide is absorbed by the oceans, affecting marine life.",
+    "fossil fuels": "Fossil fuels are non-renewable energy sources like coal, oil, and gas, which contribute to climate change.",
+    "eco-conscious": "Being eco-conscious means making choices that are mindful of environmental impact.",
+    "urban farming": "Urban farming involves growing food in cities, promoting local food production and reducing food miles.",
+    "sustainable forestry": "Sustainable forestry ensures that forest ecosystems are managed in a way that maintains their health and biodiversity.",
+    "energy conservation": "Energy conservation means using less energy by adopting efficient technologies and habits.",
+    "habitat destruction": "Habitat destruction occurs when natural areas are cleared for agriculture, development, or other uses.",
+    "ecological footprint": "An ecological footprint measures the demand placed on nature by human activities.",
+    "sustainable lifestyle": "A sustainable lifestyle aims to reduce waste, conserve resources, and minimize environmental impact.",
+    "organic food": "Organic food is produced without synthetic pesticides, fertilizers, or genetically modified organisms.",
+    "green living": "Green living involves adopting practices that reduce your environmental impact, like recycling and energy efficiency.",
+    "renewable materials": "Renewable materials are sourced from resources that can be replenished, like bamboo or cork.",
+    "waste reduction": "Waste reduction involves minimizing the amount of waste generated by reusing and recycling materials.",
+    "fair trade": "Fair trade ensures that products are made ethically, with fair wages and sustainable practices.",
+    "pollinator-friendly": "Pollinator-friendly practices protect bees and other pollinators, which are essential for ecosystem health.",
+    "sustainable fashion": "Sustainable fashion uses eco-friendly materials and ethical production methods to reduce waste and pollution.",
+    "natural resources": "Natural resources include water, air, and minerals, and their sustainable use is critical for long-term health.",
+    "hybrid vehicles": "Hybrid vehicles combine a gasoline engine with an electric motor to reduce emissions and fuel consumption.",
+    "smart grids": "Smart grids optimize energy distribution, integrating renewable energy and improving efficiency.",
+    "sustainable fishing": "Sustainable fishing ensures that fish populations and marine ecosystems are not harmed.",
+    "electric bikes": "Electric bikes provide a low-emission alternative to cars for commuting and recreational use.",
+    "eco-labels": "Eco-labels certify that products meet environmental standards for sustainability.",
+    "public transportation": "Public transportation reduces carbon emissions and traffic congestion by moving more people efficiently.",
+    "compostable packaging": "Compostable packaging breaks down naturally and enriches the soil when disposed of properly.",
+    "renewable plastics": "Renewable plastics are made from plant-based materials and are biodegradable.",
+    "sustainable urban design": "Sustainable urban design promotes green spaces, energy-efficient buildings, and reduced pollution in cities.",
+    "energy auditing": "Energy auditing helps identify where energy is being wasted and how to improve efficiency.",
+    "low-carbon technology": "Low-carbon technology aims to reduce greenhouse gas emissions and combat climate change.",
+    "sustainable water management": "Sustainable water management ensures water resources are used efficiently without harming the environment.",
+    "organic textiles": "Organic textiles are made from natural fibers like cotton or hemp that are grown without harmful chemicals.",
+    "green roofs": "Green roofs have vegetation that helps reduce heat, improve air quality, and manage stormwater.",
+    "environmental policy": "Environmental policy involves regulations and laws designed to protect natural resources and ecosystems.",
+    "marine conservation": "Marine conservation focuses on protecting ocean ecosystems and the species that inhabit them.",
+    "eco-friendly furniture": "Eco-friendly furniture is made from sustainable, non-toxic materials with minimal environmental impact.",
+    "clean technology": "Clean technology reduces environmental impact through innovative processes, like renewable energy and waste management.",
+    "carbon offsetting": "Carbon offsetting compensates for emissions by investing in environmental projects like reforestation.",
+    "green construction": "Green construction uses energy-efficient methods, sustainable materials, and renewable energy to reduce environmental impact.",
+    "energy storage": "Energy storage systems, like batteries, help store renewable energy for later use.",
+    "sustainable tourism": "Sustainable tourism focuses on minimizing the environmental impact of travel and supporting local communities.",
+    "vertical farming": "Vertical farming grows crops in stacked layers, saving space and resources, and reducing transportation costs.",
+    "environmental education": "Environmental education teaches people about the importance of protecting ecosystems and natural resources.",
+    "water footprint": "A water footprint measures the total volume of water used to produce goods and services.",
+    "eco-friendly paint": "Eco-friendly paint has low or no volatile organic compounds (VOCs) that harm air quality.",
+    "electric buses": "Electric buses reduce urban pollution and greenhouse gas emissions by using clean energy.",
+    "sustainable diets": "Sustainable diets prioritize plant-based foods and minimize resource-intensive products like meat and dairy.",
+    "green infrastructure": "Green infrastructure uses natural solutions like parks and wetlands to manage stormwater and reduce pollution.",
+
+                
+            };
+
+            // Normalize user input
+            const normalizedInput = normalizeInput(userInput);
+
+            // Exact match with static responses
+            if (responses[normalizedInput]) {
+                return responses[normalizedInput];
+            }
+
+            // Keyword search
+            for (let keyword in keywords) {
+                if (normalizedInput.includes(keyword)) {
+                    return keywords[keyword];
+                }
+            }
+
+            // Default message if no match is found
+            return "Sorry, I don't have an answer for that. Try asking about reducing plastic or eco-friendly products.";
+        }
+    </script>
+</body>
+</html>

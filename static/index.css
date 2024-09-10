@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    background: url('t3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background image covers the entire area */
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color:black;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color:black;
+}
+
+input, select, button {
+    width: calc(100% - 22px); /* Adjust width to fit inside padding */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    font-size: 16px;
+    background: #fff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #e9db18;
+    box-shadow: 0 0 5px rgba(240, 162, 16, 0.5);
+}
+
+button {
+    background-color: #2ce2f6;
+    color: #090909;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f4f43a;
+}
+
+/* Remove container styles */
+form, #results-container {
+    width: 100%;
+    max-width: 800px; /* Increased maximum width */
+    padding: 20px;
+    border-radius: 0; /* Remove border-radius */
+    box-shadow: none; /* Remove box-shadow */
+    margin-bottom: 20px;
+}
+
+/* Results grid container */
+#results {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Automatically adjust columns */
+    gap: 20px; /* Increased space between the grid items */
+    text-align: left; /* Aligns text to the left inside each result */
+}
+
+/* Result item styles */
+#results p {
+    background-color: #e0ffe0; /* Light green background color */
+    border: 1px solid #00b354; /* Border color matching the button hover state */
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #006400; /* Dark green text color */
+    font-weight: 700; /* Bold text for emphasis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover effects for result items */
+#results p:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    background-color: #ccffcc; /* Slightly lighter green on hover */
+    border-color: #008f39; /* Darker green border on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

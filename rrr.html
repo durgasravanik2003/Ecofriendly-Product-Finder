@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sustainable Activities</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .activity {
+        border: 2px solid #4CAF50;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .activity h2 {
+        margin-top: 0;
+        display: inline-block;
+    }
+    .notify-message {
+        color: green;
+        margin-left: 10px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Sustainable Activities in the Next 30 Days</h1>
+    <div class="activity">
+        <h2>Community Cleanup Day</h2>
+        <input type="checkbox" class="notify-checkbox">
+        <span class="notify-message">You will be notified</span>
+        <p><strong>Date:</strong> June 15, 2024</p>
+        <p><strong>Location:</strong> City Park</p>
+        <p><strong>Description:</strong> Join us for a community cleanup day at City Park. All materials provided.</p>
+    </div>
+    <div class="activity">
+        <h2>Recycling Workshop</h2>
+        <input type="checkbox" class="notify-checkbox">
+        <span class="notify-message">You will be notified</span>
+        <p><strong>Date:</strong> June 20, 2024</p>
+        <p><strong>Location:</strong> Community Center</p>
+        <p><strong>Description:</strong> Learn about recycling best practices at the Community Center.</p>
+    </div>
+    <div class="activity">
+        <h2>Renewable Energy Fair</h2>
+        <input type="checkbox" class="notify-checkbox">
+        <span class="notify-message">You will be notified</span>
+        <p><strong>Date:</strong> June 25, 2024</p>
+        <p><strong>Location:</strong> Convention Center</p>
+        <p><strong>Description:</strong> Discover the latest in renewable energy technology.</p>
+    </div>
+    <!-- Add more activities as needed -->
+</div>
+
+<script>
+    const checkboxes = document.querySelectorAll('.notify-checkbox');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const message = this.nextElementSibling;
+            message.style.display = this.checked ? 'inline' : 'none';
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color:none;
+      background-image: url("t3.jpg");
+      background-size: cover;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: brown;
+    }
+
+    .testimonial-container {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .testimonials {
+      display: inline-block;
+    }
+
+    .testimonial {
+      display: inline-block;
+      width: 500px;
+      padding: 20px;
+      margin: 30px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial h2 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    .testimonial p {
+      color: #555;
+    }
+
+    .submit-review {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .submit-review h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .submit-review label {
+      display: inline-block;
+      width: 85%;
+      margin-bottom: 10px;
+    }
+
+    .submit-review textarea {
+      height: 150px;
+      width: calc(100% - 20px);
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-review button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-review button:hover {
+      background-color: #0056b3;
+    }
+
+    @media screen and (max-width: 600px) {
+      .submit-review label {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Testimonials</h1>
+
+  <div class="testimonial-container">
+    <div class="testimonials" id="testimonialList">
+      <!-- Existing reviews -->
+    </div>
+  </div>
+
+  <div class="submit-review">
+    <h2>Submit Your Review</h2>
+    <form id="reviewForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" placeholder="Enter your location">
+
+      <label for="review">Your Review:</label>
+      <textarea id="review" placeholder="Enter your review"></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      // Load existing testimonials from local storage
+      var existingTestimonials = localStorage.getItem("testimonials");
+      if (existingTestimonials) {
+        document.getElementById("testimonialList").innerHTML = existingTestimonials;
+      }
+    });
+
+    // Submit review form
+    document.getElementById("reviewForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent default form submission
+      var name = document.getElementById("name").value;
+      var location = document.getElementById("location").value;
+      var review = document.getElementById("review").value;
+
+      // Create testimonial element
+      var testimonial = document.createElement("div");
+      testimonial.classList.add("testimonial");
+      testimonial.innerHTML = `
+        <h2>${name}</h2>
+        <p>Location: ${location}</p>
+        <p>${review}</p>
+      `;
+
+      // Append testimonial to testimonials container
+      document.getElementById("testimonialList").appendChild(testimonial);
+
+      // Save testimonials to local storage
+      var existingTestimonials = localStorage.getItem("testimonials");
+      if (existingTestimonials) {
+        existingTestimonials += testimonial.outerHTML;
+      } else {
+        existingTestimonials = testimonial.outerHTML;
+      }
+      localStorage.setItem("testimonials", existingTestimonials);
+
+      // Clear form fields
+      document.getElementById("name").value = "";
+      document.getElementById("location").value = "";
+      document.getElementById("review").value = "";
+    });
+  </script>
+</body>
+</html>

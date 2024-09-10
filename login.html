@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&display=swap">
+  <title>Login Page</title>
+  <style>
+    /* Login page styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('bg1.jpg');
+        background-size: cover;
+    }
+    .popup {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(226, 213, 38, 0.3);
+        padding: 20px;
+        border-radius : 10px;
+        display : none;
+    }
+    .popup p {
+        margin: 0;
+    }
+    .login-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        height: 290px;
+    }
+    h1 {
+        margin-bottom: 40px;
+        color: #333;
+    }
+    .input-field {
+        position: relative;
+        margin-bottom: 20px;
+        text-align: left;
+        display: flex; /* Add this line to make the input and eye icon align horizontally */
+        align-items: center; /* Add this line to vertically center the content */
+    }
+    input {
+        padding: 8px 0;
+        width: calc(100% - 20px); /* Adjust input width to accommodate the eye icon */
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+    }
+    .material-icons-outlined {
+        position: absolute;
+        right: 0;
+        margin-right: 5px; /* Adjust margin for spacing between input and icon */
+        cursor: pointer;
+        font-size: 20px; /* Adjust icon size */
+    }
+    .input-field .input-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #4CAF50;
+        transition: width 0.5s ease-out;
+        transition-delay: 0.5s;
+    }
+    button.login-btn {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.5s ease;
+        transition-delay: 0.5s;
+    }
+    button.login-btn:hover {
+        background-color: #45a049;
+    }
+    label {
+        position: absolute;
+        left: 0;
+        top: 16px;
+        color: #666;
+        pointer-events: none;
+        transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+        transition-delay: 0.5s;
+    }
+    .input-field input:focus+label,
+    .input-field input:not(:placeholder-shown)+label {
+        top: -12px;
+        font-size: 12px;
+        color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form action="login.php" method="post">
+      <div class="input-field">
+        <input type="text" id="username" name="username" required />
+        <label for="username">Username</label>
+        <span class="input-line"></span>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" name="password" required />
+        <label for="password">Password</label>
+        <span class="input-line"></span>
+        <span class="material-icons-outlined" id="togglepassword" onclick="togglePasswordVisibility()">visibility</span>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+      <h5>Don't have an account? <a href="signup.html">Signup</a></h5>
+    </form>
+  </div>
+  <script>
+    // Function to toggle password visibility
+    function togglePasswordVisibility() {
+      const togglePassword = document.getElementById('togglepassword');
+      const passwordField = document.getElementById('password');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        togglePassword.textContent = 'visibility_off';
+      } else {
+        passwordField.type = 'password';
+        togglePassword.textContent = 'visibility';
+      }
+    }
+  </script>
+</body>
+</html>

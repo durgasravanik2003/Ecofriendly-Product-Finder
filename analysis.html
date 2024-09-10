@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .charts {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .chart-container {
+            width: 30%;
+            margin: 0 10px;
+        }
+
+        canvas {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Carbon Footprint Analysis</h1>
+    <div class="charts">
+        <div class="chart-container">
+            <h2>Driving Hours</h2>
+            <canvas id="drivingChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Meat Consumption</h2>
+            <canvas id="meatChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Carbon Footprint Distribution</h2>
+            <canvas id="footprintChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('getAnalysisData.php')
+                .then(response => response.json())
+                .then(data => {
+                    const drivingData = data.map(item => item.dailyActivities);
+                    const dietData = data.map(item => item.diet);
+                    const footprintData = data.map(item => item.carbonFootprint);
+
+                    const drivingRanges = {
+                        '0-2 hours': drivingData.filter(hours => hours <= 2).length,
+                        '2-5 hours': drivingData.filter(hours => hours > 2 && hours <= 5).length,
+                        '5-10 hours': drivingData.filter(hours => hours > 5 && hours <= 10).length,
+                        '10+ hours': drivingData.filter(hours => hours > 10).length
+                    };
+
+                    const dietCount = dietData.reduce((acc, diet) => {
+                        acc[diet] = (acc[diet] || 0) + 1;
+                        return acc;
+                    }, {});
+
+                    const footprintRanges = {
+                        'Low (< 50 kg)': footprintData.filter(value => value < 50).length,
+                        'Moderate (50-100 kg)': footprintData.filter(value => value >= 50 && value < 100).length,
+                        'High (100-300 kg)': footprintData.filter(value => value >= 100 && value < 300).length,
+                        'Very High (> 300 kg)': footprintData.filter(value => value >= 300).length
+                    };
+
+                    new Chart(document.getElementById('drivingChart').getContext('2d'), {
+                        type: 'pie',
+                        data: {
+                            labels: Object.keys(drivingRanges),
+                            datasets: [{
+                                data: Object.values(drivingRanges),
+                                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            animation: {
+                                animateScale: true,
+                                animateRotate: true
+                            }
+                        }
+                    });
+
+                    new Chart(document.getElementById('meatChart').getContext('2d'), {
+                        type: 'pie',
+                        data: {
+                            labels: Object.keys(dietCount),
+                            datasets: [{
+                                data: Object.values(dietCount),
+                                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            animation: {
+                                animateScale: true,
+                                animateRotate: true
+                            }
+                        }
+                    });
+
+                    new Chart(document.getElementById('footprintChart').getContext('2d'), {
+                        type: 'pie',
+                        data: {
+                            labels: Object.keys(footprintRanges),
+                            datasets: [{
+                                data: Object.values(footprintRanges),
+                                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            animation: {
+                                animateScale: true,
+                                animateRotate: true
+                            }
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching analysis data:', error);
+                });
+        });
+    </script>
+</body>
+</html>
